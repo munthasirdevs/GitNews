@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video News - Global News Network</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Watch the latest video news, interviews, and special reports from Global News Network.">
+    <meta name="keywords" content="video news, news videos, interviews, reports, documentaries, GNN video">
+    <meta name="author" content="Global News Network">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Video News - Global News Network">
+    <meta property="og:description" content="Watch the latest video news, interviews, and special reports.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://globalnewsnetwork.com/video.html">
+    <meta property="og:image" content="https://globalnewsnetwork.com/assets/images/video-og.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/video.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="page-video">
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-ticker">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center py-1">
+                <span class="breaking-badge">VIDEO</span>
+                <div class="ticker-content flex-grow-1">
+                    <marquee behavior="scroll" direction="left" scrollamount="3">
+                        <span>• Watch: Exclusive interview with climate summit leaders •</span>
+                        <span>• Breaking: Live coverage of emergency press conference •</span>
+                        <span>• New Documentary: Inside the Mars Rover Mission •</span>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <h1 class="logo-text">GNN<span class="logo-dot">.</span></h1>
+                <span class="logo-subtitle">Global News Network</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main Navigation -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
+                            <li><a class="dropdown-item" href="category.html?cat=politics">Politics</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=business">Business</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=technology">Technology</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=sports">Sports</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=entertainment">Entertainment</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=health">Health</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=science">Science</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live.html">Live TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="photo-gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side Actions -->
+                <div class="d-flex align-items-center">
+                    <a href="#" class="search-icon me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="live.html" class="btn btn-danger btn-sm">
+                        <i class="fas fa-broadcast-tower me-1"></i> Live Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Video Page Hero -->
+    <section class="video-hero py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Video News</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-4 mb-3">Video News</h1>
+                    <p class="lead mb-4">Watch the latest news reports, exclusive interviews, documentaries, and special
+                        features from our global news team.</p>
+
+                    <!-- Video Categories -->
+                    <div class="video-categories mb-4">
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="#featured" class="btn btn-primary btn-sm">Featured</a>
+                            <a href="#latest" class="btn btn-outline-primary btn-sm">Latest</a>
+                            <a href="#interviews" class="btn btn-outline-primary btn-sm">Interviews</a>
+                            <a href="#documentaries" class="btn btn-outline-primary btn-sm">Documentaries</a>
+                            <a href="#exclusive" class="btn btn-outline-primary btn-sm">Exclusive</a>
+                            <a href="#trending" class="btn btn-outline-primary btn-sm">Trending</a>
+                            <button class="btn btn-outline-secondary btn-sm" id="filterToggle">
+                                <i class="fas fa-filter me-1"></i> Filter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="video-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-play-circle text-primary"></i>
+                            <span class="stat-number">2,450</span>
+                            <span class="stat-label">Videos Available</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-eye text-primary"></i>
+                            <span class="stat-number">45M+</span>
+                            <span class="stat-label">Total Views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Filter Panel -->
+    <section class="video-filter-panel bg-light py-4" id="filterPanel" style="display: none;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="filter-controls">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label class="form-label">Category</label>
+                                <select class="form-select" id="categoryFilter">
+                                    <option value="all">All Categories</option>
+                                    <option value="politics">Politics</option>
+                                    <option value="business">Business</option>
+                                    <option value="technology">Technology</option>
+                                    <option value="sports">Sports</option>
+                                    <option value="entertainment">Entertainment</option>
+                                    <option value="health">Health</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Duration</label>
+                                <select class="form-select" id="durationFilter">
+                                    <option value="all">Any Duration</option>
+                                    <option value="short">Short (0-5 min)</option>
+                                    <option value="medium">Medium (5-15 min)</option>
+                                    <option value="long">Long (15+ min)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Sort By</label>
+                                <select class="form-select" id="sortFilter">
+                                    <option value="newest">Newest First</option>
+                                    <option value="popular">Most Popular</option>
+                                    <option value="trending">Trending</option>
+                                    <option value="featured">Featured</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <button class="btn btn-primary me-2" id="applyFilters">
+                        <i class="fas fa-check me-1"></i> Apply Filters
+                    </button>
+                    <button class="btn btn-outline-secondary" id="resetFilters">
+                        <i class="fas fa-redo me-1"></i> Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video Section -->
+    <section class="featured-video py-5" id="featured">
+        <div class="container">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="section-title">Featured Video</h2>
+                    <p class="section-subtitle">Editor's choice of the day</p>
+                </div>
+                <div class="video-controls">
+                    <button class="btn btn-outline-primary btn-sm me-2" id="prevFeatured">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="btn btn-outline-primary btn-sm" id="nextFeatured">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="featured-video-container">
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <div class="featured-video-player" id="currentFeatured">
+                            <div class="video-thumbnail-large"
+                                style="background-image: url('https://images.unsplash.com/photo-1574269860368-c1b6eab3a71e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');"
+                                data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                data-title="Inside the Global Climate Summit: Exclusive Coverage">
+                                <div class="play-button-large">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <span class="video-duration">24:18</span>
+                                <div class="video-live-badge">FEATURED</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="featured-video-info">
+                            <div class="category-badge politics">Politics</div>
+                            <h3 class="featured-video-title">Inside the Global Climate Summit: Exclusive Coverage</h3>
+                            <p class="featured-video-description">An exclusive look behind the scenes of the historic
+                                climate summit, featuring interviews with world leaders and analysis from our expert
+                                team.</p>
+                            <div class="featured-video-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Published: Dec 10, 2023</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1.2M Views</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration: 24:18</span>
+                                </div>
+                            </div>
+                            <div class="featured-video-actions mt-4">
+                                <button class="btn btn-primary me-2 watch-now-btn">
+                                    <i class="fas fa-play me-1"></i> Watch Now
+                                </button>
+                                <button class="btn btn-outline-secondary me-2">
+                                    <i class="fas fa-share-alt me-1"></i> Share
+                                </button>
+                                <button class="btn btn-outline-secondary">
+                                    <i class="far fa-bookmark me-1"></i> Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Videos Section -->
+    <section class="latest-videos py-5 bg-light" id="latest">
+        <div class="container">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="section-title">Latest Videos</h2>
+                    <p class="section-subtitle">Recently published video content</p>
+                </div>
+                <a href="#all-videos" class="view-all">
+                    View All <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="row g-4" id="videoGrid">
+                <!-- Video cards will be loaded here by JavaScript -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-primary btn-lg" id="loadMoreVideos">
+                    <i class="fas fa-plus-circle me-2"></i> Load More Videos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Categories Section -->
+    <section class="video-categories-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Browse by Category</h2>
+                <p class="section-subtitle">Explore videos from specific news categories</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-category-card politics">
+                        <div class="category-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>Politics</h3>
+                        <p>Government updates, political analysis, and election coverage.</p>
+                        <a href="#" class="category-link" data-category="politics">
+                            Browse Videos <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-category-card business">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Business</h3>
+                        <p>Market analysis, financial news, and corporate updates.</p>
+                        <a href="#" class="category-link" data-category="business">
+                            Browse Videos <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-category-card technology">
+                        <div class="category-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Technology</h3>
+                        <p>Tech innovations, product launches, and digital trends.</p>
+                        <a href="#" class="category-link" data-category="technology">
+                            Browse Videos <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-category-card sports">
+                        <div class="category-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h3>Sports</h3>
+                        <p>Game highlights, athlete interviews, and sports analysis.</p>
+                        <a href="#" class="category-link" data-category="sports">
+                            Browse Videos <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-category-card entertainment">
+                        <div class="category-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>Entertainment</h3>
+                        <p>Movie reviews, celebrity news, and cultural events.</p>
+                        <a href="#" class="category-link" data-category="entertainment">
+                            Browse Videos <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-category-card science">
+                        <div class="category-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Science</h3>
+                        <p>Scientific discoveries, research updates, and space exploration.</p>
+                        <a href="#" class="category-link" data-category="science">
+                            Browse Videos <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Videos Section -->
+    <section class="trending-videos py-5 bg-light" id="trending">
+        <div class="container">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="section-title">Trending Videos</h2>
+                    <p class="section-subtitle">Most watched videos this week</p>
+                </div>
+                <div class="time-filter">
+                    <select class="form-select form-select-sm" id="trendingTimeFilter">
+                        <option value="week">This Week</option>
+                        <option value="month">This Month</option>
+                        <option value="year">This Year</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row g-4" id="trendingVideos">
+                <!-- Trending videos will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Playlist Section -->
+    <section class="playlist-section py-5">
+        <div class="container">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="section-title">Featured Playlists</h2>
+                    <p class="section-subtitle">Curated collections of related videos</p>
+                </div>
+                <a href="#all-playlists" class="view-all">
+                    View All Playlists <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="playlist-card">
+                        <div class="playlist-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Climate Change">
+                            <div class="playlist-overlay">
+                                <span class="video-count">12 Videos</span>
+                                <button class="play-all-btn">
+                                    <i class="fas fa-play-circle"></i> Play All
+                                </button>
+                            </div>
+                        </div>
+                        <div class="playlist-info">
+                            <h4>Climate Change Series</h4>
+                            <p>In-depth coverage of climate issues worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="playlist-card">
+                        <div class="playlist-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Space Exploration">
+                            <div class="playlist-overlay">
+                                <span class="video-count">8 Videos</span>
+                                <button class="play-all-btn">
+                                    <i class="fas fa-play-circle"></i> Play All
+                                </button>
+                            </div>
+                        </div>
+                        <div class="playlist-info">
+                            <h4>Space Exploration</h4>
+                            <p>Latest discoveries from NASA and beyond</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="playlist-card">
+                        <div class="playlist-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Business">
+                            <div class="playlist-overlay">
+                                <span class="video-count">15 Videos</span>
+                                <button class="play-all-btn">
+                                    <i class="fas fa-play-circle"></i> Play All
+                                </button>
+                            </div>
+                        </div>
+                        <div class="playlist-info">
+                            <h4>Market Analysis 2023</h4>
+                            <p>Quarterly financial reports and analysis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="playlist-card">
+                        <div class="playlist-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Sports">
+                            <div class="playlist-overlay">
+                                <span class="video-count">20 Videos</span>
+                                <button class="play-all-btn">
+                                    <i class="fas fa-play-circle"></i> Play All
+                                </button>
+                            </div>
+                        </div>
+                        <div class="playlist-info">
+                            <h4>Championship Moments</h4>
+                            <p>Best moments from major sports events</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-3">Never Miss a Video</h2>
+                    <p class="mb-0">Subscribe to our video newsletter and get notified about new videos, exclusive
+                        content, and special reports.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email address" required>
+                            <button class="btn btn-light" type="submit">
+                                Subscribe <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                        <div class="form-text mt-2">
+                            <small>By subscribing, you agree to our Privacy Policy and consent to receive video
+                                updates.</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About Column -->
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <a href="index.html" class="d-inline-block mb-3">
+                            <h3 class="logo-text text-white">GNN<span class="logo-dot">.</span></h3>
+                            <span class="logo-subtitle">Global News Network</span>
+                        </a>
+                        <p class="footer-description">
+                            Global News Network is your trusted source for breaking news, in-depth analysis, and
+                            comprehensive coverage of world events through video journalism.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Video Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="video.html#latest">Latest Videos</a></li>
+                        <li><a href="video.html#featured">Featured</a></li>
+                        <li><a href="video.html#interviews">Interviews</a></li>
+                        <li><a href="video.html#documentaries">Documentaries</a></li>
+                        <li><a href="video.html#trending">Trending</a></li>
+                        <li><a href="live.html">Live TV</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="advertise.html">Advertise</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-heading">Legal & Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="video-usage.html">Video Usage Terms</a></li>
+                        <li><a href="corrections.html">Corrections</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-5 pt-4 border-top">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 Global News Network. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Video Content ID: VN-2023-001 | Last Updated: Dec 11, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Player Modal -->
+    <div class="modal fade" id="videoPlayerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalTitle">Video Player</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9" id="videoPlayerContainer">
+                        <!-- Video iframe will be inserted here -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-between w-100">
+                        <div class="video-player-info">
+                            <span id="videoCategory" class="badge bg-primary me-2">Category</span>
+                            <span id="videoDuration" class="text-muted">Duration</span>
+                        </div>
+                        <div class="video-player-actions">
+                            <button class="btn btn-sm btn-outline-secondary me-2" id="shareVideoBtn">
+                                <i class="fas fa-share-alt me-1"></i> Share
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary" id="saveVideoBtn">
+                                <i class="far fa-bookmark me-1"></i> Save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/video.js"></script>
+</body>
+
+</html>
