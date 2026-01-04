@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Now - Global News Network</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Explore the most trending news stories, viral topics, and popular articles from Global News Network.">
+    <meta name="keywords" content="trending news, viral stories, popular articles, hot topics, most read">
+    <meta name="author" content="Global News Network">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Trending Now - Global News Network">
+    <meta property="og:description" content="Discover what's trending right now across the globe.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://globalnewsnetwork.com/trending.html">
+    <meta property="og:image" content="https://globalnewsnetwork.com/assets/images/trending-og.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/trending.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Trending News",
+        "description": "Most trending news stories from Global News Network",
+        "url": "https://globalnewsnetwork.com/trending.html",
+        "publisher": {
+            "@type": "NewsMediaOrganization",
+            "name": "Global News Network",
+            "url": "https://globalnewsnetwork.com"
+        }
+    }
+    </script>
+</head>
+
+<body class="page-trending">
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-ticker">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center py-1">
+                <span class="breaking-badge">TRENDING NOW</span>
+                <div class="ticker-content flex-grow-1">
+                    <marquee behavior="scroll" direction="left" scrollamount="3">
+                        <span>• Historic peace agreement signed after decades of conflict •</span>
+                        <span>• AI model predicts natural disasters with 94% accuracy •</span>
+                        <span>• WHO declares end of global pandemic emergency •</span>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <h1 class="logo-text">GNN<span class="logo-dot">.</span></h1>
+                <span class="logo-subtitle">Global News Network</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main Navigation -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
+                            <li><a class="dropdown-item" href="category.html?cat=politics">Politics</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=business">Business</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=technology">Technology</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=sports">Sports</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=entertainment">Entertainment</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=health">Health</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=science">Science</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live.html">Live TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="photo-gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="trending.html">Trending</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side Actions -->
+                <div class="d-flex align-items-center">
+                    <a href="#" class="search-icon me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="live.html" class="btn btn-danger btn-sm">
+                        <i class="fas fa-broadcast-tower me-1"></i> Live Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Trending Hero Section -->
+    <section class="trending-hero py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-content">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Trending</li>
+                            </ol>
+                        </nav>
+                        <h1 class="hero-title">Trending Now</h1>
+                        <p class="hero-subtitle">Discover the most read, shared, and talked-about stories from around
+                            the world. Updated every hour.</p>
+                        <div class="trending-stats d-flex flex-wrap gap-3 mt-4">
+                            <div class="stat-item">
+                                <i class="fas fa-fire text-danger"></i>
+                                <span class="ms-2"><strong>1.2M+</strong> Views Today</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-share-alt text-primary"></i>
+                                <span class="ms-2"><strong>45K+</strong> Shares</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-comments text-warning"></i>
+                                <span class="ms-2"><strong>12K+</strong> Comments</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-clock text-success"></i>
+                                <span class="ms-2">Updated <strong>5 min ago</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="hero-chart text-center">
+                        <div class="chart-container">
+                            <canvas id="trendingChart" width="200" height="200"></canvas>
+                            <div class="chart-overlay">
+                                <div class="chart-text">
+                                    <span class="chart-percent">+42%</span>
+                                    <small>Trending Growth</small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="chart-caption mt-3">Trending stories up 42% this week</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Navigation -->
+    <section class="trending-nav py-3 bg-light">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <div class="trending-filters">
+                    <button class="btn btn-filter active" data-filter="all">All Trending</button>
+                    <button class="btn btn-filter" data-filter="today">Today</button>
+                    <button class="btn btn-filter" data-filter="week">This Week</button>
+                    <button class="btn btn-filter" data-filter="month">This Month</button>
+                </div>
+                <div class="trending-sort">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="sortDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sort by: Most Viewed
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="sortDropdown">
+                            <li><a class="dropdown-item" href="#" data-sort="views">Most Viewed</a></li>
+                            <li><a class="dropdown-item" href="#" data-sort="shares">Most Shared</a></li>
+                            <li><a class="dropdown-item" href="#" data-sort="comments">Most Comments</a></li>
+                            <li><a class="dropdown-item" href="#" data-sort="recent">Most Recent</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Trending Content -->
+    <section class="trending-content py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Trending List -->
+                <div class="col-lg-8">
+                    <div class="trending-list">
+                        <!-- Trending Item 1 -->
+                        <div class="trending-item featured" data-category="politics" data-views="1.2M" data-shares="45K"
+                            data-time="4 hours ago">
+                            <div class="trending-rank">
+                                <span class="rank-number">1</span>
+                                <div class="rank-change up">
+                                    <i class="fas fa-arrow-up"></i> 3
+                                </div>
+                            </div>
+                            <div class="trending-content">
+                                <div class="trending-image">
+                                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                        alt="Peace Agreement">
+                                </div>
+                                <div class="trending-details">
+                                    <span class="category-badge politics">Politics</span>
+                                    <h3 class="trending-title">
+                                        <a href="news.html">Historic Peace Agreement Signed After Decades of
+                                            Conflict</a>
+                                    </h3>
+                                    <p class="trending-excerpt">Regional powers reach landmark peace deal, promising
+                                        economic cooperation and security guarantees that could transform the region's
+                                        future.</p>
+                                    <div class="trending-meta">
+                                        <span class="trending-stats">
+                                            <i class="fas fa-eye"></i> 1.2M views
+                                            <i class="fas fa-share-alt ms-3"></i> 45K shares
+                                            <i class="fas fa-comment ms-3"></i> 8.2K comments
+                                        </span>
+                                        <span class="trending-time">
+                                            <i class="fas fa-clock"></i> 4 hours ago
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trending Item 2 -->
+                        <div class="trending-item" data-category="technology" data-views="980K" data-shares="32K"
+                            data-time="8 hours ago">
+                            <div class="trending-rank">
+                                <span class="rank-number">2</span>
+                                <div class="rank-change up">
+                                    <i class="fas fa-arrow-up"></i> 2
+                                </div>
+                            </div>
+                            <div class="trending-content">
+                                <div class="trending-image">
+                                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                        alt="AI Breakthrough">
+                                </div>
+                                <div class="trending-details">
+                                    <span class="category-badge technology">Technology</span>
+                                    <h3 class="trending-title">
+                                        <a href="news.html">New AI Model Can Predict Natural Disasters With 94%
+                                            Accuracy</a>
+                                    </h3>
+                                    <p class="trending-excerpt">Breakthrough in artificial intelligence offers new hope
+                                        for early warning systems and disaster preparedness worldwide.</p>
+                                    <div class="trending-meta">
+                                        <span class="trending-stats">
+                                            <i class="fas fa-eye"></i> 980K views
+                                            <i class="fas fa-share-alt ms-3"></i> 32K shares
+                                            <i class="fas fa-comment ms-3"></i> 5.4K comments
+                                        </span>
+                                        <span class="trending-time">
+                                            <i class="fas fa-clock"></i> 8 hours ago
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trending Item 3 -->
+                        <div class="trending-item" data-category="health" data-views="850K" data-shares="28K"
+                            data-time="12 hours ago">
+                            <div class="trending-rank">
+                                <span class="rank-number">3</span>
+                                <div class="rank-change down">
+                                    <i class="fas fa-arrow-down"></i> 1
+                                </div>
+                            </div>
+                            <div class="trending-content">
+                                <div class="trending-image">
+                                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                        alt="WHO Announcement">
+                                </div>
+                                <div class="trending-details">
+                                    <span class="category-badge health">Health</span>
+                                    <h3 class="trending-title">
+                                        <a href="news.html">World Health Organization Declares End of Global Pandemic
+                                            Emergency</a>
+                                    </h3>
+                                    <p class="trending-excerpt">WHO announces transition to long-term management
+                                        strategy after significant progress in global health measures and vaccination
+                                        campaigns.</p>
+                                    <div class="trending-meta">
+                                        <span class="trending-stats">
+                                            <i class="fas fa-eye"></i> 850K views
+                                            <i class="fas fa-share-alt ms-3"></i> 28K shares
+                                            <i class="fas fa-comment ms-3"></i> 6.8K comments
+                                        </span>
+                                        <span class="trending-time">
+                                            <i class="fas fa-clock"></i> 12 hours ago
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trending Item 4 -->
+                        <div class="trending-item" data-category="business" data-views="720K" data-shares="24K"
+                            data-time="16 hours ago">
+                            <div class="trending-rank">
+                                <span class="rank-number">4</span>
+                                <div class="rank-change new">
+                                    <span class="new-badge">NEW</span>
+                                </div>
+                            </div>
+                            <div class="trending-content">
+                                <div class="trending-image">
+                                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                        alt="Stock Market">
+                                </div>
+                                <div class="trending-details">
+                                    <span class="category-badge business">Business</span>
+                                    <h3 class="trending-title">
+                                        <a href="news.html">Stock Markets Hit Record High Amid Tech Rally and Economic
+                                            Optimism</a>
+                                    </h3>
+                                    <p class="trending-excerpt">Major indices surge to all-time highs as technology
+                                        stocks lead gains and positive economic indicators boost investor confidence.
+                                    </p>
+                                    <div class="trending-meta">
+                                        <span class="trending-stats">
+                                            <i class="fas fa-eye"></i> 720K views
+                                            <i class="fas fa-share-alt ms-3"></i> 24K shares
+                                            <i class="fas fa-comment ms-3"></i> 3.2K comments
+                                        </span>
+                                        <span class="trending-time">
+                                            <i class="fas fa-clock"></i> 16 hours ago
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trending Item 5 -->
+                        <div class="trending-item" data-category="sports" data-views="680K" data-shares="22K"
+                            data-time="20 hours ago">
+                            <div class="trending-rank">
+                                <span class="rank-number">5</span>
+                                <div class="rank-change up">
+                                    <i class="fas fa-arrow-up"></i> 1
+                                </div>
+                            </div>
+                            <div class="trending-content">
+                                <div class="trending-image">
+                                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                        alt="Sports Victory">
+                                </div>
+                                <div class="trending-details">
+                                    <span class="category-badge sports">Sports</span>
+                                    <h3 class="trending-title">
+                                        <a href="news.html">National Team Advances to Championship Finals After Stunning
+                                            Victory</a>
+                                    </h3>
+                                    <p class="trending-excerpt">Last-minute goal secures championship spot in dramatic
+                                        match that kept fans on the edge of their seats until the final whistle.</p>
+                                    <div class="trending-meta">
+                                        <span class="trending-stats">
+                                            <i class="fas fa-eye"></i> 680K views
+                                            <i class="fas fa-share-alt ms-3"></i> 22K shares
+                                            <i class="fas fa-comment ms-3"></i> 4.5K comments
+                                        </span>
+                                        <span class="trending-time">
+                                            <i class="fas fa-clock"></i> 20 hours ago
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- More trending items would continue here... -->
+                    </div>
+
+                    <!-- Load More Button -->
+                    <div class="text-center mt-5">
+                        <button class="btn btn-primary btn-lg" id="loadMoreTrending">
+                            <i class="fas fa-sync-alt me-2"></i> Load More Trending Stories
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Trending Sidebar -->
+                <div class="col-lg-4">
+                    <div class="trending-sidebar">
+                        <!-- Trending Categories -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Trending by Category</h3>
+                            <div class="trending-categories">
+                                <a href="#" class="category-trend" data-category="politics">
+                                    <span class="category-name">Politics</span>
+                                    <span class="trend-count">42 stories</span>
+                                </a>
+                                <a href="#" class="category-trend" data-category="technology">
+                                    <span class="category-name">Technology</span>
+                                    <span class="trend-count">38 stories</span>
+                                </a>
+                                <a href="#" class="category-trend" data-category="business">
+                                    <span class="category-name">Business</span>
+                                    <span class="trend-count">35 stories</span>
+                                </a>
+                                <a href="#" class="category-trend" data-category="sports">
+                                    <span class="category-name">Sports</span>
+                                    <span class="trend-count">28 stories</span>
+                                </a>
+                                <a href="#" class="category-trend" data-category="entertainment">
+                                    <span class="category-name">Entertainment</span>
+                                    <span class="trend-count">25 stories</span>
+                                </a>
+                                <a href="#" class="category-trend" data-category="health">
+                                    <span class="category-name">Health</span>
+                                    <span class="trend-count">22 stories</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Viral Stories -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Going Viral</h3>
+                            <div class="viral-stories">
+                                <div class="viral-story">
+                                    <span class="viral-badge">VIRAL</span>
+                                    <h5><a href="news.html">AI-Generated Art Sells for Record $2.9 Million at
+                                            Auction</a></h5>
+                                    <div class="viral-stats">
+                                        <span><i class="fas fa-fire"></i> 2.4M views</span>
+                                        <span class="ms-3"><i class="fab fa-tiktok"></i> 500K shares</span>
+                                    </div>
+                                </div>
+                                <div class="viral-story">
+                                    <span class="viral-badge">VIRAL</span>
+                                    <h5><a href="news.html">Mystery Satellite Orbits Earth - No Country Claims
+                                            Ownership</a></h5>
+                                    <div class="viral-stats">
+                                        <span><i class="fas fa-fire"></i> 1.8M views</span>
+                                        <span class="ms-3"><i class="fab fa-twitter"></i> 320K tweets</span>
+                                    </div>
+                                </div>
+                                <div class="viral-story">
+                                    <span class="viral-badge">VIRAL</span>
+                                    <h5><a href="news.html">Ancient City Discovered Beneath Amazon Rainforest</a></h5>
+                                    <div class="viral-stats">
+                                        <span><i class="fas fa-fire"></i> 1.5M views</span>
+                                        <span class="ms-3"><i class="fab fa-instagram"></i> 280K posts</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trending Hashtags -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Trending Hashtags</h3>
+                            <div class="hashtags">
+                                <a href="#" class="hashtag">#ClimateActionNow</a>
+                                <a href="#" class="hashtag">#AIRevolution</a>
+                                <a href="#" class="hashtag">#PeaceDeal2023</a>
+                                <a href="#" class="hashtag">#StockMarketRecord</a>
+                                <a href="#" class="hashtag">#ChampionshipFinal</a>
+                                <a href="#" class="hashtag">#DigitalEconomy</a>
+                                <a href="#" class="hashtag">#SpaceDiscovery</a>
+                                <a href="#" class="hashtag">#FutureOfWork</a>
+                            </div>
+                        </div>
+
+                        <!-- Trending Chart -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Trending Timeline</h3>
+                            <div class="trending-timeline">
+                                <canvas id="timelineChart" height="200"></canvas>
+                            </div>
+                            <div class="timeline-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #4285f4;"></span>
+                                    <span>Politics</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #34a853;"></span>
+                                    <span>Tech</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #ea4335;"></span>
+                                    <span>Business</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Analysis -->
+    <section class="trending-analysis py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Trending Insights</h2>
+                <p class="section-subtitle">Analysis of trending patterns and audience engagement</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Peak Engagement Times</h4>
+                        <p>Trending stories receive 65% more engagement between 6-9 PM local time across all regions.
+                        </p>
+                        <div class="insight-stats">
+                            <span class="stat">+65%</span>
+                            <span class="stat-label">Evening Engagement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h4>Social Media Impact</h4>
+                        <p>78% of trending stories originate from social media shares before gaining mainstream
+                            attention.</p>
+                        <div class="insight-stats">
+                            <span class="stat">78%</span>
+                            <span class="stat-label">Social Origin</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Trending Duration</h4>
+                        <p>The average trending story remains popular for 3.5 days before being replaced by new topics.
+                        </p>
+                        <div class="insight-stats">
+                            <span class="stat">3.5 Days</span>
+                            <span class="stat-label">Average Duration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-3">Get Trending Updates</h2>
+                    <p class="mb-0">Never miss a trending story. Get daily trending news digest delivered to your inbox.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="newsletter-form trending-newsletter">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email for trending updates"
+                                required>
+                            <button class="btn btn-light" type="submit">
+                                Subscribe <i class="fas fa-fire ms-2"></i>
+                            </button>
+                        </div>
+                        <div class="form-text mt-2">
+                            <small>By subscribing, you agree to our Privacy Policy and consent to receive trending
+                                updates.</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About Column -->
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <a href="index.html" class="d-inline-block mb-3">
+                            <h3 class="logo-text text-white">GNN<span class="logo-dot">.</span></h3>
+                            <span class="logo-subtitle">Global News Network</span>
+                        </a>
+                        <p class="footer-description">
+                            Global News Network delivers trending news and stories that matter. We track what's hot,
+                            what's viral, and what's important across the globe.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Trending Topics</h4>
+                    <ul class="footer-links">
+                        <li><a href="trending.html?filter=politics">Politics</a></li>
+                        <li><a href="trending.html?filter=technology">Technology</a></li>
+                        <li><a href="trending.html?filter=business">Business</a></li>
+                        <li><a href="trending.html?filter=sports">Sports</a></li>
+                        <li><a href="trending.html?filter=entertainment">Entertainment</a></li>
+                        <li><a href="trending.html?filter=health">Health</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="advertise.html">Advertise</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-heading">Legal & Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="ethics.html">Code of Ethics</a></li>
+                        <li><a href="corrections.html">Corrections</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-5 pt-4 border-top">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 Global News Network. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Headquarters: 123 News Street, Media City, MC 10101</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search Trending News</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="searchForm" class="mb-4">
+                        <div class="input-group">
+                            <input type="text" id="searchInput" class="form-control form-control-lg"
+                                placeholder="Search for trending news, topics, or hashtags..." autocomplete="off">
+                            <button class="btn btn-primary btn-lg" type="submit">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+                    </form>
+                    <div class="search-results" style="display: none;">
+                        <!-- Search results will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/trending.js"></script>
+</body>
+
+</html>
