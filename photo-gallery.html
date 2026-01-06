@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Global News Network</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Browse our extensive photo gallery covering breaking news, events, politics, sports, and more from around the world.">
+    <meta name="keywords"
+        content="news photos, photo gallery, breaking news images, events photography, news photography">
+    <meta name="author" content="Global News Network">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Photo Gallery - Global News Network">
+    <meta property="og:description"
+        content="Browse our extensive photo gallery covering breaking news, events, politics, sports, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://globalnewsnetwork.com/photo-gallery.html">
+    <meta property="og:image" content="https://globalnewsnetwork.com/assets/images/gallery-og.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Lightbox2 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/photo-gallery.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Photo Gallery",
+        "description": "Extensive collection of news photographs from Global News Network",
+        "publisher": {
+            "@type": "NewsMediaOrganization",
+            "name": "Global News Network",
+            "url": "https://globalnewsnetwork.com"
+        }
+    }
+    </script>
+</head>
+
+<body class="page-gallery">
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-ticker">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center py-1">
+                <span class="breaking-badge">LATEST</span>
+                <div class="ticker-content flex-grow-1">
+                    <marquee behavior="scroll" direction="left" scrollamount="3">
+                        <span>• New Photo Gallery: Exclusive images from the Global Climate Summit •</span>
+                        <span>• Sports Photography: Championship finals action shots now available •</span>
+                        <span>• Breaking: Photojournalism awards announced • GNN photographers win top honors •</span>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <h1 class="logo-text">GNN<span class="logo-dot">.</span></h1>
+                <span class="logo-subtitle">Global News Network</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main Navigation -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
+                            <li><a class="dropdown-item" href="category.html?cat=politics">Politics</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=business">Business</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=technology">Technology</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=sports">Sports</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=entertainment">Entertainment</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=health">Health</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=science">Science</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live.html">Live TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="photo-gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side Actions -->
+                <div class="d-flex align-items-center">
+                    <button id="themeToggle" class="btn btn-outline-secondary btn-sm theme-toggle me-2"
+                        aria-label="Toggle dark mode" title="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="#" class="search-icon me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="live.html" class="btn btn-danger btn-sm">
+                        <i class="fas fa-broadcast-tower me-1"></i> Live Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="gallery-header py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Photo Gallery</li>
+                        </ol>
+                    </nav>
+                    <h1 class="page-title mb-3">Photo Gallery</h1>
+                    <p class="page-subtitle lead mb-4">Explore our extensive collection of news photographs from around
+                        the world. Capturing moments that define our times.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="gallery-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-images"></i>
+                            <span class="stat-number">1,250+</span>
+                            <span class="stat-label">Photos</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-camera"></i>
+                            <span class="stat-number">45</span>
+                            <span class="stat-label">Photographers</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-trophy"></i>
+                            <span class="stat-number">28</span>
+                            <span class="stat-label">Awards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Controls -->
+    <section class="gallery-controls py-4 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Photos</button>
+                        <button class="filter-btn" data-filter="politics">Politics</button>
+                        <button class="filter-btn" data-filter="sports">Sports</button>
+                        <button class="filter-btn" data-filter="events">Events</button>
+                        <button class="filter-btn" data-filter="breaking">Breaking News</button>
+                        <button class="filter-btn" data-filter="featured">Featured</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="gallery-actions d-flex align-items-center justify-content-lg-end gap-3">
+                        <div class="sort-dropdown">
+                            <select class="form-select form-select-sm" id="sortGallery">
+                                <option value="newest">Newest First</option>
+                                <option value="oldest">Oldest First</option>
+                                <option value="popular">Most Viewed</option>
+                                <option value="featured">Featured</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm" id="gridViewBtn" title="Grid View">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="btn d-none btn-outline-primary btn-sm" id="listViewBtn" title="List View">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery -->
+    <main class="gallery-main py-5">
+        <div class="container">
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Photo 1 -->
+                <div class="gallery-item" data-category="politics breaking" data-date="2023-11-15" data-views="24500">
+                    <div class="photo-card">
+                        <a href="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            data-lightbox="gallery"
+                            data-title="Global Climate Summit - World leaders gather for emergency climate meeting"
+                            data-alt="Global Climate Summit">
+                            <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Global Climate Summit" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-info">
+                                    <span class="photo-category">Politics</span>
+                                    <h4 class="photo-title">Global Climate Summit</h4>
+                                    <p class="photo-description">World leaders gather for emergency climate meeting</p>
+                                    <div class="photo-meta">
+                                        <span><i class="fas fa-calendar me-1"></i> Nov 15, 2023</span>
+                                        <span><i class="fas fa-eye me-1"></i> 24.5K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="gallery-item" data-category="sports events" data-date="2023-11-14" data-views="18900">
+                    <div class="photo-card">
+                        <a href="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            data-lightbox="gallery" data-title="Championship Finals - National team celebrates victory"
+                            data-alt="Championship Finals">
+                            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Championship Finals" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-info">
+                                    <span class="photo-category">Sports</span>
+                                    <h4 class="photo-title">Championship Finals</h4>
+                                    <p class="photo-description">National team celebrates dramatic victory</p>
+                                    <div class="photo-meta">
+                                        <span><i class="fas fa-calendar me-1"></i> Nov 14, 2023</span>
+                                        <span><i class="fas fa-eye me-1"></i> 18.9K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="gallery-item" data-category="breaking technology" data-date="2023-11-13" data-views="31200">
+                    <div class="photo-card">
+                        <a href="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            data-lightbox="gallery" data-title="Tech Innovation - AI breakthrough demonstration"
+                            data-alt="Tech Innovation">
+                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Tech Innovation" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-info">
+                                    <span class="photo-category">Technology</span>
+                                    <h4 class="photo-title">AI Breakthrough</h4>
+                                    <p class="photo-description">New AI model demonstration in healthcare</p>
+                                    <div class="photo-meta">
+                                        <span><i class="fas fa-calendar me-1"></i> Nov 13, 2023</span>
+                                        <span><i class="fas fa-eye me-1"></i> 31.2K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="gallery-item" data-category="featured events" data-date="2023-11-12" data-views="15600">
+                    <div class="photo-card">
+                        <a href="https://images.unsplash.com/photo-1574269860368-c1b6eab3a71e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            data-lightbox="gallery" data-title="Film Festival - Red carpet arrivals"
+                            data-alt="Film Festival">
+                            <img src="https://images.unsplash.com/photo-1574269860368-c1b6eab3a71e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Film Festival" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-info">
+                                    <span class="photo-category">Entertainment</span>
+                                    <h4 class="photo-title">Film Festival</h4>
+                                    <p class="photo-description">International film festival red carpet arrivals</p>
+                                    <div class="photo-meta">
+                                        <span><i class="fas fa-calendar me-1"></i> Nov 12, 2023</span>
+                                        <span><i class="fas fa-eye me-1"></i> 15.6K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo 5 -->
+                <div class="gallery-item" data-category="breaking politics" data-date="2023-11-11" data-views="27800">
+                    <div class="photo-card">
+                        <a href="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            data-lightbox="gallery" data-title="Economic Summit - Central bank governors meet"
+                            data-alt="Economic Summit">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Economic Summit" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-info">
+                                    <span class="photo-category">Business</span>
+                                    <h4 class="photo-title">Economic Summit</h4>
+                                    <p class="photo-description">Central bank governors emergency meeting</p>
+                                    <div class="photo-meta">
+                                        <span><i class="fas fa-calendar me-1"></i> Nov 11, 2023</span>
+                                        <span><i class="fas fa-eye me-1"></i> 27.8K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo 6 -->
+                <div class="gallery-item" data-category="sports featured" data-date="2023-11-10" data-views="19400">
+                    <div class="photo-card">
+                        <a href="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            data-lightbox="gallery" data-title="Marathon Event - Runners crossing finish line"
+                            data-alt="Marathon Event">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Marathon Event" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-info">
+                                    <span class="photo-category">Sports</span>
+                                    <h4 class="photo-title">International Marathon</h4>
+                                    <p class="photo-description">Annual marathon event with record participation</p>
+                                    <div class="photo-meta">
+                                        <span><i class="fas fa-calendar me-1"></i> Nov 10, 2023</span>
+                                        <span><i class="fas fa-eye me-1"></i> 19.4K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo 7 -->
+                <div class="gallery-item" data-category="events featured" data-date="2023-11-09" data-views="12300">
+                    <div class="photo-card">
+                        <a href="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            data-lightbox="gallery" data-title="Space Exploration - Rocket launch"
+                            data-alt="Space Exploration">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Space Exploration" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-info">
+                                    <span class="photo-category">Science</span>
+                                    <h4 class="photo-title">Space Launch</h4>
+                                    <p class="photo-description">Private space company rocket launch</p>
+                                    <div class="photo-meta">
+                                        <span><i class="fas fa-calendar me-1"></i> Nov 9, 2023</span>
+                                        <span><i class="fas fa-eye me-1"></i> 12.3K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo 8 -->
+                <div class="gallery-item" data-category="breaking politics" data-date="2023-11-08" data-views="34200">
+                    <div class="photo-card">
+                        <a href="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            data-lightbox="gallery" data-title="Digital Conference - Tech leaders panel discussion"
+                            data-alt="Digital Conference">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Digital Conference" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-info">
+                                    <span class="photo-category">Technology</span>
+                                    <h4 class="photo-title">Digital Conference</h4>
+                                    <p class="photo-description">Global digital economy summit keynote</p>
+                                    <div class="photo-meta">
+                                        <span><i class="fas fa-calendar me-1"></i> Nov 8, 2023</span>
+                                        <span><i class="fas fa-eye me-1"></i> 34.2K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo 9 -->
+                <div class="gallery-item" data-category="sports breaking" data-date="2023-11-07" data-views="28700">
+                    <div class="photo-card">
+                        <a href="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            data-lightbox="gallery" data-title="Medical Breakthrough - New treatment announcement"
+                            data-alt="Medical Breakthrough">
+                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Medical Breakthrough" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-info">
+                                    <span class="photo-category">Health</span>
+                                    <h4 class="photo-title">Medical Innovation</h4>
+                                    <p class="photo-description">New cancer treatment breakthrough announced</p>
+                                    <div class="photo-meta">
+                                        <span><i class="fas fa-calendar me-1"></i> Nov 7, 2023</span>
+                                        <span><i class="fas fa-eye me-1"></i> 28.7K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo 10 -->
+                <div class="gallery-item" data-category="events featured" data-date="2023-11-06" data-views="15600">
+                    <div class="photo-card">
+                        <a href="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            data-lightbox="gallery" data-title="Business Forum - Startup competition"
+                            data-alt="Business Forum">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Business Forum" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-info">
+                                    <span class="photo-category">Business</span>
+                                    <h4 class="photo-title">Startup Forum</h4>
+                                    <p class="photo-description">Annual business startup competition finals</p>
+                                    <div class="photo-meta">
+                                        <span><i class="fas fa-calendar me-1"></i> Nov 6, 2023</span>
+                                        <span><i class="fas fa-eye me-1"></i> 15.6K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo 11 -->
+                <div class="gallery-item" data-category="politics events" data-date="2023-11-05" data-views="21800">
+                    <div class="photo-card">
+                        <a href="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            data-lightbox="gallery" data-title="Diplomatic Meeting - Foreign ministers conference"
+                            data-alt="Diplomatic Meeting">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Diplomatic Meeting" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-info">
+                                    <span class="photo-category">Politics</span>
+                                    <h4 class="photo-title">Diplomatic Summit</h4>
+                                    <p class="photo-description">Regional diplomatic conference on trade</p>
+                                    <div class="photo-meta">
+                                        <span><i class="fas fa-calendar me-1"></i> Nov 5, 2023</span>
+                                        <span><i class="fas fa-eye me-1"></i> 21.8K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo 12 -->
+                <div class="gallery-item" data-category="sports featured" data-date="2023-11-04" data-views="19300">
+                    <div class="photo-card">
+                        <a href="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            data-lightbox="gallery" data-title="Music Festival - Crowd at main stage"
+                            data-alt="Music Festival">
+                            <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Music Festival" class="photo-img">
+                            <div class="photo-overlay">
+                                <div class="photo-info">
+                                    <span class="photo-category">Entertainment</span>
+                                    <h4 class="photo-title">Music Festival</h4>
+                                    <p class="photo-description">International music festival main stage performance</p>
+                                    <div class="photo-meta">
+                                        <span><i class="fas fa-calendar me-1"></i> Nov 4, 2023</span>
+                                        <span><i class="fas fa-eye me-1"></i> 19.3K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-5">
+                <button class="btn btn-primary btn-lg" id="loadMorePhotos">
+                    <i class="fas fa-plus-circle me-2"></i> Load More Photos
+                </button>
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state text-center py-5" id="emptyState" style="display: none;">
+                <div class="empty-state-icon mb-4">
+                    <i class="fas fa-images fa-4x text-muted"></i>
+                </div>
+                <h3 class="mb-3">No Photos Found</h3>
+                <p class="text-muted mb-4">Try selecting a different category or clear your filters.</p>
+                <button class="btn btn-primary" id="clearFilters">
+                    <i class="fas fa-times me-2"></i> Clear All Filters
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Featured Photographers -->
+    <section class="featured-photographers py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Featured Photographers</h2>
+                <p class="section-subtitle">Meet the talented photographers behind our images</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="photographer-card text-center">
+                        <div class="photographer-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                alt="Sarah Johnson" class="rounded-circle">
+                        </div>
+                        <h4 class="photographer-name mt-3">Sarah Johnson</h4>
+                        <p class="photographer-role">Chief Photojournalist</p>
+                        <p class="photographer-bio small text-muted">15+ years experience, Pulitzer Prize winner</p>
+                        <div class="photographer-stats">
+                            <span class="stat"><i class="fas fa-camera me-1"></i> 2,500+</span>
+                            <span class="stat"><i class="fas fa-trophy me-1"></i> 12</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="photographer-card text-center">
+                        <div class="photographer-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                alt="Michael Chen" class="rounded-circle">
+                        </div>
+                        <h4 class="photographer-name mt-3">Michael Chen</h4>
+                        <p class="photographer-role">Sports Photographer</p>
+                        <p class="photographer-bio small text-muted">Specializing in action and sports photography</p>
+                        <div class="photographer-stats">
+                            <span class="stat"><i class="fas fa-camera me-1"></i> 1,800+</span>
+                            <span class="stat"><i class="fas fa-trophy me-1"></i> 8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="photographer-card text-center">
+                        <div class="photographer-avatar">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                alt="Maria Rodriguez" class="rounded-circle">
+                        </div>
+                        <h4 class="photographer-name mt-3">Maria Rodriguez</h4>
+                        <p class="photographer-role">Political Photographer</p>
+                        <p class="photographer-bio small text-muted">Covering politics and international relations</p>
+                        <div class="photographer-stats">
+                            <span class="stat"><i class="fas fa-camera me-1"></i> 2,100+</span>
+                            <span class="stat"><i class="fas fa-trophy me-1"></i> 6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="photographer-card text-center">
+                        <div class="photographer-avatar">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                alt="David Wilson" class="rounded-circle">
+                        </div>
+                        <h4 class="photographer-name mt-3">David Wilson</h4>
+                        <p class="photographer-role">Feature Photographer</p>
+                        <p class="photographer-bio small text-muted">Specializing in human interest and feature stories
+                        </p>
+                        <div class="photographer-stats">
+                            <span class="stat"><i class="fas fa-camera me-1"></i> 1,600+</span>
+                            <span class="stat"><i class="fas fa-trophy me-1"></i> 5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-3">Photo Updates</h2>
+                    <p class="mb-0">Get notified when new photo galleries are published. Stay updated with visual
+                        stories from around the world.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email address" required>
+                            <button class="btn btn-light" type="submit">
+                                Subscribe <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                        <div class="form-text mt-2">
+                            <small>By subscribing, you agree to our Privacy Policy and consent to receive updates from
+                                our photo gallery.</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About Column -->
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <a href="index.html" class="d-inline-block mb-3">
+                            <h3 class="logo-text text-white">GNN<span class="logo-dot">.</span></h3>
+                            <span class="logo-subtitle">Global News Network</span>
+                        </a>
+                        <p class="footer-description">
+                            Global News Network is your trusted source for breaking news, in-depth analysis, and
+                            comprehensive coverage of world events. We deliver accurate, timely, and unbiased
+                            journalism.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="category.html?cat=politics">Politics</a></li>
+                        <li><a href="category.html?cat=business">Business</a></li>
+                        <li><a href="category.html?cat=technology">Technology</a></li>
+                        <li><a href="category.html?cat=sports">Sports</a></li>
+                        <li><a href="category.html?cat=entertainment">Entertainment</a></li>
+                        <li><a href="category.html?cat=health">Health</a></li>
+                    </ul>
+                </div>
+
+                <!-- Media Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Media</h4>
+                    <ul class="footer-links">
+                        <li><a href="photo-gallery.html">Photo Gallery</a></li>
+                        <li><a href="video.html">Video News</a></li>
+                        <li><a href="live.html">Live TV</a></li>
+                        <li><a href="podcasts.html">Podcasts</a></li>
+                        <li><a href="infographics.html">Infographics</a></li>
+                        <li><a href="interactive.html">Interactive</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-heading">Legal & Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms of Service</a></li>
+                        <li><a href="photo-licensing.html">Photo Licensing</a></li>
+                        <li><a href="photo-submission.html">Photo Submission</a></li>
+                        <li><a href="photo-credits.html">Photo Credits</a></li>
+                        <li><a href="contact.html">Contact Photo Desk</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-5 pt-4 border-top">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 Global News Network. All rights reserved.</p>
+                        <p class="small text-muted mb-0">All photographs are copyright of their respective
+                            photographers.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Photo Desk: 123 News Street, Media City, MC 10101</p>
+                        <p class="small text-muted mb-0">Email: photos@globalnewsnetwork.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search News</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="searchForm" class="mb-4">
+                        <div class="input-group">
+                            <input type="text" id="searchInput" class="form-control form-control-lg"
+                                placeholder="Search for news, topics, or keywords..." autocomplete="off">
+                            <button class="btn btn-primary btn-lg" type="submit">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+                    </form>
+                    <div class="search-results" style="display: none;">
+                        <!-- Search results will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Info Modal -->
+    <div class="modal fade" id="photoInfoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Photo Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" alt="" class="img-fluid rounded mb-3" id="modalPhoto">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 id="modalTitle"></h4>
+                            <p id="modalDescription" class="text-muted"></p>
+                            <hr>
+                            <div class="photo-details">
+                                <div class="detail-item">
+                                    <strong><i class="fas fa-camera me-2"></i>Photographer:</strong>
+                                    <span id="modalPhotographer">Sarah Johnson</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong><i class="fas fa-calendar me-2"></i>Date Taken:</strong>
+                                    <span id="modalDate">November 15, 2023</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong><i class="fas fa-map-marker-alt me-2"></i>Location:</strong>
+                                    <span id="modalLocation">New York, USA</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong><i class="fas fa-eye me-2"></i>Views:</strong>
+                                    <span id="modalViews">24,500</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong><i class="fas fa-tags me-2"></i>Categories:</strong>
+                                    <span id="modalCategories">Politics, Breaking News</span>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <button class="btn btn-outline-primary me-2" id="downloadPhoto">
+                                    <i class="fas fa-download me-1"></i> Download
+                                </button>
+                                <button class="btn btn-outline-primary" id="sharePhoto">
+                                    <i class="fas fa-share-alt me-1"></i> Share
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/photo-gallery.js"></script>
+</body>
+
+</html>
