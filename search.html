@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search News - Global News Network</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Search for the latest news, articles, and stories across all categories on Global News Network.">
+    <meta name="keywords" content="search news, find articles, news search, global news search">
+    <meta name="author" content="Global News Network">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Search News - Global News Network">
+    <meta property="og:description" content="Find the latest news and articles across all categories">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://globalnewsnetwork.com/search.html">
+    <meta property="og:image" content="https://globalnewsnetwork.com/assets/images/search-og.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/search.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Global News Network Search",
+        "url": "https://globalnewsnetwork.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://globalnewsnetwork.com/search.html?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+</head>
+
+<body class="page-search">
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-ticker">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center py-1">
+                <span class="breaking-badge">LATEST</span>
+                <div class="ticker-content flex-grow-1">
+                    <marquee behavior="scroll" direction="left" scrollamount="3">
+                        <span>• Global News Network Search: Find breaking news, exclusive reports, and in-depth analysis
+                            •</span>
+                        <span>• Search across all categories: Politics, Business, Technology, Sports, Entertainment,
+                            Health, Science •</span>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <h1 class="logo-text">GNN<span class="logo-dot">.</span></h1>
+                <span class="logo-subtitle">Global News Network</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main Navigation -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
+                            <li><a class="dropdown-item" href="category.html?cat=politics">Politics</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=business">Business</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=technology">Technology</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=sports">Sports</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=entertainment">Entertainment</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=health">Health</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=science">Science</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live.html">Live TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="photo-gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side Actions -->
+                <div class="d-flex align-items-center">
+                    <a href="#" class="search-icon me-3 active" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="live.html" class="btn btn-danger btn-sm">
+                        <i class="fas fa-broadcast-tower me-1"></i> Live Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section py-3 bg-light">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Search News</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Search Section -->
+    <section class="search-hero py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center mb-5">
+                        <h1 class="search-title mb-3">Search Global News Network</h1>
+                        <p class="search-subtitle">Find news articles, videos, and stories across all categories</p>
+                    </div>
+
+                    <!-- Search Form -->
+                    <div class="search-form-container">
+                        <form id="mainSearchForm" class="search-form">
+                            <div class="input-group input-group-lg">
+                                <input type="text" class="form-control" id="searchQuery"
+                                    placeholder="Enter keywords, topics, or phrases..." autocomplete="off"
+                                    aria-label="Search input">
+                                <button class="btn btn-primary" type="submit" id="searchButton">
+                                    <i class="fas fa-search"></i> Search
+                                </button>
+                            </div>
+                            <div class="search-options mt-3">
+                                <div class="row g-2">
+                                    <div class="col-md-4">
+                                        <select class="form-select" id="categoryFilter">
+                                            <option value="">All Categories</option>
+                                            <option value="politics">Politics</option>
+                                            <option value="business">Business</option>
+                                            <option value="technology">Technology</option>
+                                            <option value="sports">Sports</option>
+                                            <option value="entertainment">Entertainment</option>
+                                            <option value="health">Health</option>
+                                            <option value="science">Science</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-select" id="dateFilter">
+                                            <option value="">Any Time</option>
+                                            <option value="1">Past 24 Hours</option>
+                                            <option value="7">Past Week</option>
+                                            <option value="30">Past Month</option>
+                                            <option value="365">Past Year</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-select" id="sortFilter">
+                                            <option value="relevance">Sort by Relevance</option>
+                                            <option value="newest">Newest First</option>
+                                            <option value="oldest">Oldest First</option>
+                                            <option value="popular">Most Popular</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Quick Search Suggestions -->
+                    <div class="quick-search mt-5">
+                        <h3 class="h5 mb-3">Quick Search</h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="#" class="quick-search-tag" data-query="breaking news">Breaking News</a>
+                            <a href="#" class="quick-search-tag" data-query="politics">Politics</a>
+                            <a href="#" class="quick-search-tag" data-query="technology">Technology</a>
+                            <a href="#" class="quick-search-tag" data-query="sports">Sports</a>
+                            <a href="#" class="quick-search-tag" data-query="business">Business</a>
+                            <a href="#" class="quick-search-tag" data-query="health">Health</a>
+                            <a href="#" class="quick-search-tag" data-query="entertainment">Entertainment</a>
+                            <a href="#" class="quick-search-tag" data-query="science">Science</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="search-results-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Results Column -->
+                <div class="col-lg-8">
+                    <div class="search-results-header mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="results-title mb-0">Search Results</h2>
+                            <div class="results-count">
+                                <span id="resultsCount">0</span> results found
+                            </div>
+                        </div>
+                        <div class="search-info mt-2">
+                            <p class="mb-0" id="searchInfo">Enter a search term to find news articles</p>
+                        </div>
+                    </div>
+
+                    <!-- Results Container -->
+                    <div class="search-results-container" id="searchResults">
+                        <!-- Results will be dynamically inserted here -->
+
+                        <!-- Initial State -->
+                        <div class="search-initial-state text-center py-5">
+                            <div class="initial-state-icon mb-4">
+                                <i class="fas fa-search fa-3x text-muted"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Start Your Search</h3>
+                            <p class="text-muted mb-4">Enter keywords above to search through thousands of news
+                                articles, videos, and stories.</p>
+                            <div class="initial-state-tips">
+                                <h4 class="h6 mb-3">Search Tips:</h4>
+                                <ul class="list-unstyled text-start mx-auto" style="max-width: 500px;">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Use specific
+                                        keywords for better results</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Try different
+                                        search terms</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Use category
+                                        filters to narrow results</li>
+                                    <li><i class="fas fa-check-circle text-primary me-2"></i> Sort by date or popularity
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Search results pagination" class="mt-5" id="paginationContainer"
+                        style="display: none;">
+                        <ul class="pagination justify-content-center" id="pagination">
+                            <!-- Pagination will be dynamically inserted here -->
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="search-sidebar">
+                        <!-- Advanced Filters -->
+                        <div class="sidebar-widget mb-4">
+                            <h3 class="widget-title">Advanced Filters</h3>
+                            <div class="advanced-filters">
+                                <div class="mb-3">
+                                    <label class="form-label">Content Type</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="filterArticles" checked>
+                                        <label class="form-check-label" for="filterArticles">
+                                            Articles
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="filterVideos" checked>
+                                        <label class="form-check-label" for="filterVideos">
+                                            Videos
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="filterGallery" checked>
+                                        <label class="form-check-label" for="filterGallery">
+                                            Gallery
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Author</label>
+                                    <input type="text" class="form-control" id="authorFilter"
+                                        placeholder="Filter by author">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Minimum Views</label>
+                                    <input type="number" class="form-control" id="viewsFilter" placeholder="e.g., 1000">
+                                </div>
+                                <button class="btn btn-primary w-100" id="applyFilters">
+                                    <i class="fas fa-filter me-2"></i> Apply Filters
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Recent Searches -->
+                        <div class="sidebar-widget mb-4">
+                            <h3 class="widget-title">Recent Searches</h3>
+                            <div class="recent-searches" id="recentSearches">
+                                <!-- Recent searches will be dynamically inserted here -->
+                                <p class="text-muted small" id="noRecentSearches">No recent searches</p>
+                            </div>
+                        </div>
+
+                        <!-- Popular Searches -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Popular Searches</h3>
+                            <div class="popular-searches">
+                                <a href="#" class="popular-search-tag" data-query="climate change">Climate Change</a>
+                                <a href="#" class="popular-search-tag" data-query="artificial intelligence">AI</a>
+                                <a href="#" class="popular-search-tag" data-query="election 2023">Election 2023</a>
+                                <a href="#" class="popular-search-tag" data-query="stock market">Stock Market</a>
+                                <a href="#" class="popular-search-tag" data-query="space exploration">Space</a>
+                                <a href="#" class="popular-search-tag" data-query="covid vaccine">Vaccine</a>
+                                <a href="#" class="popular-search-tag" data-query="renewable energy">Renewable
+                                    Energy</a>
+                                <a href="#" class="popular-search-tag" data-query="digital transformation">Digital</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-3">Stay Updated</h2>
+                    <p class="mb-0">Get the latest search results and news alerts delivered to your inbox.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email address" required>
+                            <button class="btn btn-light" type="submit">
+                                Subscribe <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                        <div class="form-text mt-2">
+                            <small>By subscribing, you agree to our Privacy Policy and consent to receive
+                                updates.</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About Column -->
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <a href="index.html" class="d-inline-block mb-3">
+                            <h3 class="logo-text text-white">GNN<span class="logo-dot">.</span></h3>
+                            <span class="logo-subtitle">Global News Network</span>
+                        </a>
+                        <p class="footer-description">
+                            Global News Network is your trusted source for breaking news, in-depth analysis, and
+                            comprehensive coverage of world events.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="category.html?cat=politics">Politics</a></li>
+                        <li><a href="category.html?cat=business">Business</a></li>
+                        <li><a href="category.html?cat=technology">Technology</a></li>
+                        <li><a href="category.html?cat=sports">Sports</a></li>
+                        <li><a href="category.html?cat=entertainment">Entertainment</a></li>
+                        <li><a href="category.html?cat=health">Health</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="advertise.html">Advertise</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-heading">Legal & Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="ethics.html">Code of Ethics</a></li>
+                        <li><a href="corrections.html">Corrections</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-5 pt-4 border-top">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 Global News Network. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Headquarters: 123 News Street, Media City, MC 10101</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal (for header search icon) -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search News</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="searchForm" class="mb-4">
+                        <div class="input-group">
+                            <input type="text" id="searchInput" class="form-control form-control-lg"
+                                placeholder="Search for news, topics, or keywords..." autocomplete="off">
+                            <button class="btn btn-primary btn-lg" type="submit">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+                    </form>
+                    <div class="search-results" style="display: none;">
+                        <!-- Search results will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/search.js"></script>
+</body>
+
+</html>
