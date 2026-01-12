@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Global News Network</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Learn about Global News Network - Our mission, values, and commitment to delivering trusted journalism worldwide.">
+    <meta name="keywords" content="about us, news organization, journalism, mission, values, team, editorial standards">
+    <meta name="author" content="Global News Network">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About Us - Global News Network">
+    <meta property="og:description" content="Learn about our mission to deliver trusted journalism worldwide.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://globalnewsnetwork.com/about.html">
+    <meta property="og:image" content="https://globalnewsnetwork.com/assets/images/about-og.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Global News Network",
+        "description": "Global News Network - Your trusted source for breaking news, latest updates, and in-depth coverage.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Global News Network",
+            "url": "https://globalnewsnetwork.com",
+            "logo": "https://globalnewsnetwork.com/assets/images/logo.png",
+            "foundingDate": "1995",
+            "founders": [
+                {
+                    "@type": "Person",
+                    "name": "Robert Johnson"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Sarah Williams"
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+
+<body class="page-about">
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-ticker">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center py-1">
+                <span class="breaking-badge">ABOUT US</span>
+                <div class="ticker-content flex-grow-1">
+                    <marquee behavior="scroll" direction="left" scrollamount="3">
+                        <span>• Trusted journalism since 1995 •</span>
+                        <span>• 150+ countries covered •</span>
+                        <span>• 1000+ journalists worldwide •</span>
+                        <span>• 24/7 news coverage •</span>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <h1 class="logo-text">GNN<span class="logo-dot">.</span></h1>
+                <span class="logo-subtitle">Global News Network</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main Navigation -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html?cat=all">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live.html">Live TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html" aria-current="page">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side Actions -->
+                <div class="d-flex align-items-center">
+                    <a href="#" class="search-icon me-3" data-bs-toggle="modal" data-bs-target="#searchModal"
+                        aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="live.html" class="btn btn-danger btn-sm">
+                        <i class="fas fa-broadcast-tower me-1"></i> Live Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header about-header">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-8 text-white">
+                    <nav aria-label="breadcrumb" class="mb-4">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-4 fw-bold mb-4">Our Mission: Truth Without Fear</h1>
+                    <p class="lead mb-4">For nearly three decades, Global News Network has been committed to delivering
+                        accurate, timely, and unbiased journalism to audiences worldwide.</p>
+                    <div class="stats d-flex flex-wrap gap-4 mt-5">
+                        <div class="stat-item">
+                            <div class="stat-number">28+</div>
+                            <div class="stat-label">Years of Service</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">150+</div>
+                            <div class="stat-label">Countries Covered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1,200+</div>
+                            <div class="stat-label">Journalists</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50M+</div>
+                            <div class="stat-label">Monthly Readers</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Our Story -->
+    <section class="section-our-story py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="story-image position-relative">
+                        <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            alt="GNN Newsroom" class="img-fluid rounded shadow-lg" loading="lazy">
+                        <div class="story-badge">
+                            <span>Since 1995</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Our Story</h2>
+                    <p class="lead mb-4">Founded in 1995 by veteran journalists Robert Johnson and Sarah Williams,
+                        Global News Network began as a small news agency with a big vision: to create a truly global
+                        news organization free from political and commercial influence.</p>
+                    <p class="mb-4">What started as a team of 25 journalists in London has grown into one of the world's
+                        most respected news organizations, with bureaus in every major region and a network of
+                        correspondents spanning six continents.</p>
+                    <p class="mb-4">Through wars, elections, economic crises, and pandemics, GNN has been
+                        there—providing context, challenging narratives, and giving voice to the voiceless. Our
+                        commitment to investigative journalism has exposed corruption, championed human rights, and held
+                        power to account.</p>
+                    <div class="signature mt-5">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                            alt="Founder Signature" class="signature-img" loading="lazy">
+                        <div class="signature-info">
+                            <h5>Robert Johnson</h5>
+                            <p class="text-muted mb-0">Co-Founder & Editor-in-Chief Emeritus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="section-our-mission py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-4">Our Mission & Values</h2>
+                    <p class="lead mb-5">We believe journalism is a public service. Our mission is to inform, educate,
+                        and empower citizens around the world with accurate, independent, and impactful news reporting.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card text-center">
+                        <div class="value-icon mb-4">
+                            <i class="fas fa-crosshairs" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="mb-3">Accuracy First</h4>
+                        <p class="text-muted">Every fact is verified, every source is checked, and every story is
+                            reviewed by multiple editors before publication.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card text-center">
+                        <div class="value-icon mb-4">
+                            <i class="fas fa-balance-scale" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="mb-3">Independence</h4>
+                        <p class="text-muted">We are free from political and commercial influence, funded by our readers
+                            and viewers through subscriptions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card text-center">
+                        <div class="value-icon mb-4">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="mb-3">Diversity & Inclusion</h4>
+                        <p class="text-muted">Our newsroom reflects the world we cover, with journalists from diverse
+                            backgrounds and perspectives.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card text-center">
+                        <div class="value-icon mb-4">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="mb-3">Accountability</h4>
+                        <p class="text-muted">We hold power to account—whether corporate, political, or
+                            institutional—and we correct errors transparently.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Coverage -->
+    <section class="section-coverage py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-4">Global Coverage Network</h2>
+                    <p class="lead">With news bureaus across six continents, we bring you local perspectives on global
+                        stories.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="coverage-card">
+                        <div class="coverage-region">Americas</div>
+                        <ul class="coverage-list">
+                            <li>New York (Headquarters)</li>
+                            <li>Washington D.C.</li>
+                            <li>Los Angeles</li>
+                            <li>Toronto</li>
+                            <li>São Paulo</li>
+                            <li>Mexico City</li>
+                        </ul>
+                        <div class="coverage-count">6 Bureaus</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="coverage-card">
+                        <div class="coverage-region">Europe</div>
+                        <ul class="coverage-list">
+                            <li>London</li>
+                            <li>Paris</li>
+                            <li>Berlin</li>
+                            <li>Brussels</li>
+                            <li>Rome</li>
+                            <li>Moscow</li>
+                        </ul>
+                        <div class="coverage-count">6 Bureaus</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="coverage-card">
+                        <div class="coverage-region">Asia Pacific</div>
+                        <ul class="coverage-list">
+                            <li>Tokyo</li>
+                            <li>Hong Kong</li>
+                            <li>Singapore</li>
+                            <li>New Delhi</li>
+                            <li>Seoul</li>
+                            <li>Sydney</li>
+                        </ul>
+                        <div class="coverage-count">6 Bureaus</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="coverage-card">
+                        <div class="coverage-region">Middle East & Africa</div>
+                        <ul class="coverage-list">
+                            <li>Dubai</li>
+                            <li>Cairo</li>
+                            <li>Jerusalem</li>
+                            <li>Nairobi</li>
+                            <li>Johannesburg</li>
+                            <li>Lagos</li>
+                        </ul>
+                        <div class="coverage-count">6 Bureaus</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial Standards -->
+    <section class="section-standards py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Editorial Standards</h2>
+                    <p class="lead mb-4">Our commitment to journalistic integrity is outlined in our Editorial
+                        Standards, which every GNN journalist must follow.</p>
+                    <div class="standards-list">
+                        <div class="standard-item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <div>
+                                <h5>Fact-Based Reporting</h5>
+                                <p>All information must be verified through multiple independent sources.</p>
+                            </div>
+                        </div>
+                        <div class="standard-item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <div>
+                                <h5>Source Protection</h5>
+                                <p>We protect confidential sources and never reveal their identities.</p>
+                            </div>
+                        </div>
+                        <div class="standard-item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <div>
+                                <h5>Conflict Disclosure</h5>
+                                <p>All potential conflicts of interest must be disclosed to readers.</p>
+                            </div>
+                        </div>
+                        <div class="standard-item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <div>
+                                <h5>Correction Policy</h5>
+                                <p>Errors are corrected promptly and transparently with clear explanations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="standards-card">
+                        <div class="standards-header">
+                            <h3><i class="fas fa-book me-2" aria-hidden="true"></i> Code of Ethics</h3>
+                        </div>
+                        <div class="standards-body">
+                            <p>Our journalists pledge to uphold these principles:</p>
+                            <ul>
+                                <li>Seek truth and report it</li>
+                                <li>Minimize harm</li>
+                                <li>Act independently</li>
+                                <li>Be accountable and transparent</li>
+                                <li>Respect diverse viewpoints</li>
+                                <li>Protect the vulnerable</li>
+                                <li>Challenge discrimination</li>
+                                <li>Maintain privacy when appropriate</li>
+                            </ul>
+                            <div class="text-center mt-4">
+                                <a href="ethics.html" class="btn btn-outline-light">Read Full Code of Ethics</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="section-awards py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-4">Awards & Recognition</h2>
+                    <p class="lead">Our commitment to excellence has been recognized by leading journalism organizations
+                        worldwide.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-trophy" aria-hidden="true"></i>
+                        </div>
+                        <h4>12x</h4>
+                        <p>International Journalism Awards</p>
+                        <span class="award-year">1998-2023</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-award" aria-hidden="true"></i>
+                        </div>
+                        <h4>8x</h4>
+                        <p>Press Freedom Awards</p>
+                        <span class="award-year">2005-2022</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-medal" aria-hidden="true"></i>
+                        </div>
+                        <h4>15x</h4>
+                        <p>Investigative Reporting Awards</p>
+                        <span class="award-year">2001-2023</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>#1</h4>
+                        <p>Most Trusted News Source 2023</p>
+                        <span class="award-year">Media Trust Survey</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-cta py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-3">Join Our Mission</h2>
+                    <p class="mb-0">Support independent journalism that holds power accountable and tells the stories
+                        that matter.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex gap-3">
+                        <a href="subscribe.html" class="btn btn-light btn-lg flex-grow-1">
+                            <i class="fas fa-newspaper me-2" aria-hidden="true"></i> Subscribe
+                        </a>
+                        <a href="careers.html" class="btn btn-outline-light btn-lg flex-grow-1">
+                            <i class="fas fa-briefcase me-2" aria-hidden="true"></i> Careers
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About Column -->
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <a href="index.html" class="d-inline-block mb-3">
+                            <h3 class="logo-text text-white">GNN<span class="logo-dot">.</span></h3>
+                            <span class="logo-subtitle">Global News Network</span>
+                        </a>
+                        <p class="footer-description">
+                            Global News Network is your trusted source for breaking news, in-depth analysis, and
+                            comprehensive coverage of world events. We deliver accurate, timely, and unbiased
+                            journalism.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="category.html?cat=politics">Politics</a></li>
+                        <li><a href="category.html?cat=business">Business</a></li>
+                        <li><a href="category.html?cat=technology">Technology</a></li>
+                        <li><a href="category.html?cat=sports">Sports</a></li>
+                        <li><a href="category.html?cat=entertainment">Entertainment</a></li>
+                        <li><a href="category.html?cat=health">Health</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="active">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="advertise.html">Advertise</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-heading">Legal & Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="ethics.html">Code of Ethics</a></li>
+                        <li><a href="corrections.html">Corrections</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-5 pt-4 border-top">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 Global News Network. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Headquarters: 123 News Street, Media City, MC 10101</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search News</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="searchForm" class="mb-4">
+                        <div class="input-group">
+                            <input type="text" id="searchInput" class="form-control form-control-lg"
+                                placeholder="Search for news, topics, or keywords..." autocomplete="off"
+                                aria-label="Search input">
+                            <button class="btn btn-primary btn-lg" type="submit">
+                                <i class="fas fa-search" aria-hidden="true"></i> Search
+                            </button>
+                        </div>
+                    </form>
+                    <div class="search-results" style="display: none;">
+                        <!-- Search results will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/about.js"></script>
+</body>
+
+</html>
