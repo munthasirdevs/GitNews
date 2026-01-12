@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking News - Latest Updates & Emergency Alerts | Global News Network</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Breaking News - Stay informed with the latest emergency alerts, live updates, and urgent news from around the world on Global News Network.">
+    <meta name="keywords"
+        content="breaking news, emergency news, live updates, urgent news, latest news, news alerts, crisis updates">
+    <meta name="author" content="Global News Network">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Breaking News - Latest Updates & Emergency Alerts | Global News Network">
+    <meta property="og:description"
+        content="Stay informed with the latest emergency alerts and urgent news from around the world.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://globalnewsnetwork.com/breaking-news.html">
+    <meta property="og:image" content="https://globalnewsnetwork.com/assets/images/breaking-news-og.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/breaking-news.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Breaking News",
+        "description": "Latest breaking news and emergency updates",
+        "url": "https://globalnewsnetwork.com/breaking-news.html",
+        "publisher": {
+            "@type": "NewsMediaOrganization",
+            "name": "Global News Network"
+        }
+    }
+    </script>
+</head>
+
+<body class="page-breaking-news">
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-ticker">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center py-1">
+                <span class="breaking-badge">LIVE NOW</span>
+                <div class="ticker-content flex-grow-1">
+                    <marquee behavior="scroll" direction="left" scrollamount="4">
+                        <span>🚨 BREAKING: Major Earthquake Hits Coastal Region - Emergency Services Responding •</span>
+                        <span>🚨 FLASH: Diplomatic Crisis Escalates Between Major Powers •</span>
+                        <span>🚨 URGENT: Severe Weather Warning Issued for Multiple States •</span>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <h1 class="logo-text">GNN<span class="logo-dot">.</span></h1>
+                <span class="logo-subtitle">Global News Network</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main Navigation -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="breaking-news.html">Breaking News</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
+                            <li><a class="dropdown-item" href="category.html?cat=politics">Politics</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=business">Business</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=technology">Technology</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=sports">Sports</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=entertainment">Entertainment</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=health">Health</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=science">Science</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live.html">Live TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side Actions -->
+                <div class="d-flex align-items-center">
+                    <a href="#" class="search-icon me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="live.html" class="btn btn-danger btn-sm">
+                        <i class="fas fa-broadcast-tower me-1"></i> Live Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breaking News Header -->
+    <header class="breaking-header py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Breaking News</li>
+                        </ol>
+                    </nav>
+                    <h1 class="breaking-title mb-3">
+                        <i class="fas fa-bolt text-danger me-3"></i>Breaking News
+                    </h1>
+                    <p class="breaking-subtitle lead mb-4">Latest emergency updates, live coverage, and urgent news from
+                        around the world. Stay informed with real-time alerts.</p>
+                    <div class="breaking-stats d-flex flex-wrap gap-4">
+                        <div class="stat-item">
+                            <span class="stat-number" id="liveUpdates">12</span>
+                            <span class="stat-label">Live Updates</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="breakingCount">47</span>
+                            <span class="stat-label">Breaking Today</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="emergencyAlerts">3</span>
+                            <span class="stat-label">Emergency Alerts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="breaking-alert p-4 rounded">
+                        <div class="alert-icon mb-3">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Emergency Alert System</h3>
+                        <p class="small mb-3">Get instant notifications for critical breaking news in your area.</p>
+                        <button class="btn btn-danger w-100" id="enableAlerts">
+                            <i class="fas fa-bell me-2"></i>Enable Alerts
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breaking News Filters -->
+    <section class="breaking-filters py-3 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="filter-buttons">
+                        <button class="btn filter-btn active" data-filter="all">All Breaking</button>
+                        <button class="btn filter-btn" data-filter="emergency">Emergency</button>
+                        <button class="btn filter-btn" data-filter="politics">Politics</button>
+                        <button class="btn filter-btn" data-filter="weather">Weather</button>
+                        <button class="btn filter-btn" data-filter="security">Security</button>
+                        <button class="btn filter-btn" data-filter="health">Health</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sort-options">
+                        <select class="form-select" id="sortBreaking">
+                            <option value="latest">Latest First</option>
+                            <option value="important">Most Important</option>
+                            <option value="regional">Regional First</option>
+                            <option value="verified">Verified Sources</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Breaking News Section -->
+    <main class="breaking-main py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column: Breaking News Feed -->
+                <div class="col-lg-8">
+                    <!-- Emergency Alert Banner -->
+                    <div class="emergency-alert-banner mb-4">
+                        <div class="alert-content">
+                            <div class="alert-header d-flex align-items-center mb-2">
+                                <span class="alert-badge">EMERGENCY ALERT</span>
+                                <span class="alert-time ms-auto">Just In</span>
+                            </div>
+                            <h3 class="alert-title">
+                                <i class="fas fa-exclamation-circle me-2"></i>
+                                Major Earthquake Hits Coastal Region - Tsunami Warning Issued
+                            </h3>
+                            <p class="alert-description">
+                                A magnitude 7.2 earthquake has struck the coastal region. Emergency services are
+                                responding.
+                                Tsunami warning issued for coastal areas. Residents advised to move to higher ground.
+                            </p>
+                            <div class="alert-meta">
+                                <span><i class="fas fa-map-marker-alt me-1"></i> Coastal Region</span>
+                                <span><i class="fas fa-clock me-1"></i> 15 minutes ago</span>
+                                <span><i class="fas fa-shield-alt me-1"></i> Verified Source</span>
+                            </div>
+                            <div class="alert-actions mt-3">
+                                <a href="live.html" class="btn btn-danger btn-sm me-2">
+                                    <i class="fas fa-play-circle me-1"></i>Watch Live
+                                </a>
+                                <a href="news.html" class="btn btn-outline-danger btn-sm">
+                                    <i class="fas fa-newspaper me-1"></i>Full Story
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Breaking News Feed -->
+                    <div class="breaking-feed" id="breakingFeed">
+                        <!-- Breaking News Item 1 -->
+                        <article class="breaking-item critical" data-category="emergency">
+                            <div class="breaking-item-header">
+                                <span class="breaking-badge emergency">EMERGENCY</span>
+                                <span class="breaking-time">25 min ago</span>
+                            </div>
+                            <div class="breaking-item-content">
+                                <h3 class="breaking-item-title">
+                                    <a href="news.html">
+                                        <i class="fas fa-fire text-danger me-2"></i>
+                                        Wildfires Spread Across Southern State - Evacuations Ordered
+                                    </a>
+                                </h3>
+                                <p class="breaking-item-excerpt">
+                                    Multiple wildfires have broken out across the southern state, forcing evacuations
+                                    in several communities. Firefighters from neighboring states being deployed.
+                                </p>
+                                <div class="breaking-item-meta">
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> Southern State</span>
+                                    <span><i class="fas fa-user me-1"></i> John Roberts</span>
+                                    <span><i class="fas fa-eye me-1"></i> 125K tracking</span>
+                                </div>
+                                <div class="breaking-item-updates">
+                                    <span class="update-badge">LIVE UPDATES</span>
+                                    <span class="update-count">12 updates in last hour</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Breaking News Item 2 -->
+                        <article class="breaking-item important" data-category="politics">
+                            <div class="breaking-item-header">
+                                <span class="breaking-badge politics">POLITICS</span>
+                                <span class="breaking-time">42 min ago</span>
+                            </div>
+                            <div class="breaking-item-content">
+                                <h3 class="breaking-item-title">
+                                    <a href="news.html">
+                                        <i class="fas fa-landmark text-primary me-2"></i>
+                                        Diplomatic Crisis Escalates - Emergency UN Session Called
+                                    </a>
+                                </h3>
+                                <p class="breaking-item-excerpt">
+                                    Tensions between major powers escalate as diplomatic talks collapse.
+                                    Emergency UN Security Council session called for tonight.
+                                </p>
+                                <div class="breaking-item-meta">
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> United Nations</span>
+                                    <span><i class="fas fa-user me-1"></i> Maria Gonzalez</span>
+                                    <span><i class="fas fa-eye me-1"></i> 98K tracking</span>
+                                </div>
+                                <div class="breaking-item-updates">
+                                    <span class="update-badge">DEVELOPING</span>
+                                    <span class="update-count">8 updates in last hour</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Breaking News Item 3 -->
+                        <article class="breaking-item important" data-category="health">
+                            <div class="breaking-item-header">
+                                <span class="breaking-badge health">HEALTH</span>
+                                <span class="breaking-time">1 hour ago</span>
+                            </div>
+                            <div class="breaking-item-content">
+                                <h3 class="breaking-item-title">
+                                    <a href="news.html">
+                                        <i class="fas fa-hospital text-success me-2"></i>
+                                        Major Hospital System Reports Critical Shortage - Emergency Measures
+                                    </a>
+                                </h3>
+                                <p class="breaking-item-excerpt">
+                                    State's largest hospital network reports critical shortages of essential supplies.
+                                    Emergency procurement measures activated at federal level.
+                                </p>
+                                <div class="breaking-item-meta">
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> Statewide</span>
+                                    <span><i class="fas fa-user me-1"></i> Dr. Sarah Chen</span>
+                                    <span><i class="fas fa-eye me-1"></i> 76K tracking</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Breaking News Item 4 -->
+                        <article class="breaking-item" data-category="weather">
+                            <div class="breaking-item-header">
+                                <span class="breaking-badge weather">WEATHER</span>
+                                <span class="breaking-time">1.5 hours ago</span>
+                            </div>
+                            <div class="breaking-item-content">
+                                <h3 class="breaking-item-title">
+                                    <a href="news.html">
+                                        <i class="fas fa-bolt text-warning me-2"></i>
+                                        Severe Thunderstorm Warning - Flash Flood Risk
+                                    </a>
+                                </h3>
+                                <p class="breaking-item-excerpt">
+                                    National Weather Service issues severe thunderstorm warning for multiple states.
+                                    Flash flood risk in low-lying areas. Residents advised to seek shelter.
+                                </p>
+                                <div class="breaking-item-meta">
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> Midwest Region</span>
+                                    <span><i class="fas fa-user me-1"></i> Weather Bureau</span>
+                                    <span><i class="fas fa-eye me-1"></i> 54K tracking</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Breaking News Item 5 -->
+                        <article class="breaking-item" data-category="security">
+                            <div class="breaking-item-header">
+                                <span class="breaking-badge security">SECURITY</span>
+                                <span class="breaking-time">2 hours ago</span>
+                            </div>
+                            <div class="breaking-item-content">
+                                <h3 class="breaking-item-title">
+                                    <a href="news.html">
+                                        <i class="fas fa-shield-alt text-info me-2"></i>
+                                        Major Airport Security Incident - Flights Diverted
+                                    </a>
+                                </h3>
+                                <p class="breaking-item-excerpt">
+                                    Security incident at international airport leads to terminal evacuation.
+                                    Multiple flights diverted. Authorities investigating suspicious package.
+                                </p>
+                                <div class="breaking-item-meta">
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> International Airport</span>
+                                    <span><i class="fas fa-user me-1"></i> Security Sources</span>
+                                    <span><i class="fas fa-eye me-1"></i> 67K tracking</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Breaking News Item 6 -->
+                        <article class="breaking-item" data-category="politics">
+                            <div class="breaking-item-header">
+                                <span class="breaking-badge politics">POLITICS</span>
+                                <span class="breaking-time">2.5 hours ago</span>
+                            </div>
+                            <div class="breaking-item-content">
+                                <h3 class="breaking-item-title">
+                                    <a href="news.html">
+                                        <i class="fas fa-gavel text-primary me-2"></i>
+                                        Supreme Court Issues Emergency Ruling on Voting Rights Case
+                                    </a>
+                                </h3>
+                                <p class="breaking-item-excerpt">
+                                    Supreme Court issues emergency ruling in landmark voting rights case.
+                                    Decision expected to impact upcoming elections nationwide.
+                                </p>
+                                <div class="breaking-item-meta">
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> Supreme Court</span>
+                                    <span><i class="fas fa-user me-1"></i> Legal Correspondent</span>
+                                    <span><i class="fas fa-eye me-1"></i> 89K tracking</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Load More Button -->
+                    <div class="text-center mt-5">
+                        <button class="btn btn-outline-danger btn-lg" id="loadMoreBreaking">
+                            <i class="fas fa-sync-alt me-2"></i> Load More Breaking News
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Live Updates & Alerts -->
+                <div class="col-lg-4">
+                    <!-- Live Updates Sidebar -->
+                    <div class="sidebar-widget mb-4">
+                        <h3 class="widget-title">
+                            <i class="fas fa-broadcast-tower text-danger me-2"></i>Live Updates
+                        </h3>
+                        <div class="live-updates" id="liveUpdatesFeed">
+                            <!-- Live Update 1 -->
+                            <div class="live-update new">
+                                <div class="live-time">14:32</div>
+                                <div class="live-content">
+                                    <p class="mb-1">Emergency services confirm 120 people evacuated from wildfire zone.
+                                    </p>
+                                    <span class="live-tag">Wildfire</span>
+                                </div>
+                            </div>
+
+                            <!-- Live Update 2 -->
+                            <div class="live-update new">
+                                <div class="live-time">14:28</div>
+                                <div class="live-content">
+                                    <p class="mb-1">Tsunami warning extended to additional coastal areas.</p>
+                                    <span class="live-tag">Earthquake</span>
+                                </div>
+                            </div>
+
+                            <!-- Live Update 3 -->
+                            <div class="live-update">
+                                <div class="live-time">14:15</div>
+                                <div class="live-content">
+                                    <p class="mb-1">Diplomatic talks resume at UN headquarters.</p>
+                                    <span class="live-tag">Politics</span>
+                                </div>
+                            </div>
+
+                            <!-- Live Update 4 -->
+                            <div class="live-update">
+                                <div class="live-time">14:05</div>
+                                <div class="live-content">
+                                    <p class="mb-1">Hospital reports receiving emergency medical supplies.</p>
+                                    <span class="live-tag">Health</span>
+                                </div>
+                            </div>
+
+                            <!-- Live Update 5 -->
+                            <div class="live-update">
+                                <div class="live-time">13:52</div>
+                                <div class="live-content">
+                                    <p class="mb-1">Airport security incident resolved, terminal reopening.</p>
+                                    <span class="live-tag">Security</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-sm btn-outline-secondary" id="refreshUpdates">
+                                <i class="fas fa-redo me-1"></i>Refresh Updates
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Resources -->
+                    <div class="sidebar-widget mb-4">
+                        <h3 class="widget-title">
+                            <i class="fas fa-life-ring text-danger me-2"></i>Emergency Resources
+                        </h3>
+                        <div class="resources-list">
+                            <a href="#" class="resource-item">
+                                <i class="fas fa-phone-alt me-2"></i>
+                                <span>Emergency Services: 911</span>
+                            </a>
+                            <a href="#" class="resource-item">
+                                <i class="fas fa-ambulance me-2"></i>
+                                <span>Medical Emergency</span>
+                            </a>
+                            <a href="#" class="resource-item">
+                                <i class="fas fa-fire-extinguisher me-2"></i>
+                                <span>Fire Department</span>
+                            </a>
+                            <a href="#" class="resource-item">
+                                <i class="fas fa-shield-alt me-2"></i>
+                                <span>Police Department</span>
+                            </a>
+                            <a href="#" class="resource-item">
+                                <i class="fas fa-weather-warning me-2"></i>
+                                <span>Weather Alerts</span>
+                            </a>
+                            <a href="#" class="resource-item">
+                                <i class="fas fa-road me-2"></i>
+                                <span>Road Conditions</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Regional Alerts -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">
+                            <i class="fas fa-map-marker-alt text-danger me-2"></i>Regional Alerts
+                        </h3>
+                        <div class="alerts-list">
+                            <div class="alert-item">
+                                <div class="alert-region">East Coast</div>
+                                <div class="alert-type severe">Severe Weather</div>
+                            </div>
+                            <div class="alert-item">
+                                <div class="alert-region">Midwest</div>
+                                <div class="alert-type warning">Flood Warning</div>
+                            </div>
+                            <div class="alert-item">
+                                <div class="alert-region">West Coast</div>
+                                <div class="alert-type emergency">Earthquake</div>
+                            </div>
+                            <div class="alert-item">
+                                <div class="alert-region">South</div>
+                                <div class="alert-type warning">Wildfire</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Emergency Information Section -->
+    <section class="emergency-info py-5 bg-danger text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-3">
+                        <i class="fas fa-exclamation-triangle me-2"></i>Emergency Preparedness
+                    </h2>
+                    <p class="mb-0">Important information and resources to help you stay safe during emergencies and
+                        breaking news situations.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="emergency-guide.html" class="btn btn-light">
+                        <i class="fas fa-book me-2"></i>Emergency Guide
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-3">Get Breaking News Alerts</h2>
+                    <p class="mb-0">Receive instant notifications for breaking news and emergency alerts in your area.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="newsletter-form" id="breakingNewsletter">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email address" required>
+                            <button class="btn btn-light" type="submit">
+                                Subscribe <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                        <div class="form-text mt-2">
+                            <small>By subscribing, you agree to receive breaking news alerts and emergency
+                                notifications.</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About Column -->
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <a href="index.html" class="d-inline-block mb-3">
+                            <h3 class="logo-text text-white">GNN<span class="logo-dot">.</span></h3>
+                            <span class="logo-subtitle">Global News Network</span>
+                        </a>
+                        <p class="footer-description">
+                            Your trusted source for breaking news, emergency alerts, and real-time updates from around
+                            the world.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Breaking News</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="text-danger">Emergency Alerts</a></li>
+                        <li><a href="live.html">Live Coverage</a></li>
+                        <li><a href="#">Weather Updates</a></li>
+                        <li><a href="#">Traffic Alerts</a></li>
+                        <li><a href="#">Security Updates</a></li>
+                        <li><a href="#">Health Emergencies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="footer-heading">Emergency Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="emergency-guide.html">Emergency Guide</a></li>
+                        <li><a href="#">Safety Procedures</a></li>
+                        <li><a href="#">Emergency Contacts</a></li>
+                        <li><a href="#">Shelter Locations</a></li>
+                        <li><a href="#">Evacuation Routes</a></li>
+                        <li><a href="#">First Aid Information</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="footer-heading">Contact & Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Report Breaking News</a></li>
+                        <li><a href="contact.html">News Tips</a></li>
+                        <li><a href="contact.html">Emergency Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms of Service</a></li>
+                        <li><a href="corrections.html">Corrections</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-5 pt-4 border-top">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 Global News Network. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">
+                            <i class="fas fa-exclamation-circle me-1"></i>
+                            For emergencies, dial 911 or your local emergency number
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search Breaking News</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="searchForm" class="mb-4">
+                        <div class="input-group">
+                            <input type="text" id="searchInput" class="form-control form-control-lg"
+                                placeholder="Search breaking news, alerts, or emergencies..." autocomplete="off">
+                            <button class="btn btn-danger btn-lg" type="submit">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+                    </form>
+                    <div class="search-results" style="display: none;">
+                        <!-- Search results will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/breaking-news.js"></script>
+</body>
+
+</html>

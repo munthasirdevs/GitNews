@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Global News Network</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Contact Global News Network - Get in touch with our editorial team, advertising department, or customer support.">
+    <meta name="keywords" content="contact, feedback, support, advertising, news, media, journalism">
+    <meta name="author" content="Global News Network">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Us - Global News Network">
+    <meta property="og:description" content="Get in touch with our editorial team and support staff.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://globalnewsnetwork.com/contact.html">
+    <meta property="og:image" content="https://globalnewsnetwork.com/assets/images/contact-og.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Global News Network",
+        "description": "Contact information and inquiry form for Global News Network",
+        "url": "https://globalnewsnetwork.com/contact.html",
+        "publisher": {
+            "@type": "NewsMediaOrganization",
+            "name": "Global News Network",
+            "url": "https://globalnewsnetwork.com"
+        }
+    }
+    </script>
+</head>
+
+<body class="page-contact">
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-ticker">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center py-1">
+                <span class="breaking-badge">BREAKING</span>
+                <div class="ticker-content flex-grow-1">
+                    <marquee behavior="scroll" direction="left" scrollamount="3">
+                        <span>• Global leaders reach historic climate agreement at emergency summit •</span>
+                        <span>• Stock markets hit record high amid tech rally and positive economic indicators •</span>
+                        <span>• National sports team advances to championship finals after stunning victory •</span>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <h1 class="logo-text">GNN<span class="logo-dot">.</span></h1>
+                <span class="logo-subtitle">Global News Network</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main Navigation -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
+                            <li><a class="dropdown-item" href="category.html?cat=politics">Politics</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=business">Business</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=technology">Technology</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=sports">Sports</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=entertainment">Entertainment</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=health">Health</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=science">Science</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live.html">Live TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="photo-gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side Actions -->
+                <div class="d-flex align-items-center">
+                    <a href="#" class="search-icon me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="live.html" class="btn btn-danger btn-sm">
+                        <i class="fas fa-broadcast-tower me-1"></i> Live Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header contact-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="page-title">Contact Us</h1>
+                    <p class="page-subtitle">Get in touch with our team for inquiries, feedback, or support</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <main class="contact-content py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Information -->
+                <div class="col-lg-4">
+                    <div class="contact-info-sidebar">
+                        <!-- Headquarters -->
+                        <div class="contact-info-card mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3>Headquarters</h3>
+                            <address>
+                                <p class="mb-2"><strong>Global News Network</strong></p>
+                                <p class="mb-1">123 News Street, Media City</p>
+                                <p class="mb-1">MC 10101, United States</p>
+                                <p class="mb-0"><i class="fas fa-map-marker-alt me-2"></i> <a href="#"
+                                        data-lat="40.7128" data-lng="-74.0060" class="map-link">View on Map</a></p>
+                            </address>
+                        </div>
+
+                        <!-- Contact Channels -->
+                        <div class="contact-info-card mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3>Contact Channels</h3>
+                            <ul class="contact-channels">
+                                <li>
+                                    <i class="fas fa-phone-alt"></i>
+                                    <div>
+                                        <strong>General Inquiries</strong>
+                                        <span>+1 (555) 123-4567</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-newspaper"></i>
+                                    <div>
+                                        <strong>Editorial Department</strong>
+                                        <span>editorial@globalnews.com</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-ad"></i>
+                                    <div>
+                                        <strong>Advertising</strong>
+                                        <span>ads@globalnews.com</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-bullhorn"></i>
+                                    <div>
+                                        <strong>Press Inquiries</strong>
+                                        <span>press@globalnews.com</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Office Hours -->
+                        <div class="contact-info-card mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Office Hours</h3>
+                            <ul class="office-hours">
+                                <li>
+                                    <span>Monday - Friday</span>
+                                    <span>8:00 AM - 8:00 PM EST</span>
+                                </li>
+                                <li>
+                                    <span>Saturday</span>
+                                    <span>9:00 AM - 5:00 PM EST</span>
+                                </li>
+                                <li>
+                                    <span>Sunday</span>
+                                    <span>10:00 AM - 4:00 PM EST</span>
+                                </li>
+                            </ul>
+                            <p class="small text-muted mt-3">24/7 News Desk: Available for breaking news</p>
+                        </div>
+
+                        <!-- Emergency Contact -->
+                        <div class="contact-info-card emergency-contact">
+                            <div class="contact-icon emergency">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <h3>Breaking News Tips</h3>
+                            <p>Have breaking news or urgent information?</p>
+                            <a href="tel:+15551234567" class="btn btn-danger">
+                                <i class="fas fa-phone-alt me-2"></i> Call News Desk
+                            </a>
+                            <p class="small mt-2">Available 24/7 for urgent matters</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form & Map -->
+                <div class="col-lg-8">
+                    <!-- Contact Form -->
+                    <div class="contact-form-card mb-5">
+                        <div class="card-header">
+                            <h2>Send Us a Message</h2>
+                            <p>We'll get back to you as soon as possible</p>
+                        </div>
+                        <div class="card-body">
+                            <form id="contactForm" class="ajax-form" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="firstName" class="form-label">First Name *</label>
+                                            <input type="text" class="form-control" id="firstName" name="firstName"
+                                                required>
+                                            <div class="invalid-feedback">Please enter your first name.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="lastName" class="form-label">Last Name *</label>
+                                            <input type="text" class="form-control" id="lastName" name="lastName"
+                                                required>
+                                            <div class="invalid-feedback">Please enter your last name.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email" class="form-label">Email Address *</label>
+                                            <input type="email" class="form-control" id="email" name="email" required>
+                                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phone" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" id="phone" name="phone">
+                                            <div class="form-text">Optional - for urgent matters</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="department" class="form-label">Department *</label>
+                                            <select class="form-select" id="department" name="department" required>
+                                                <option value="" selected disabled>Select a department</option>
+                                                <option value="general">General Inquiry</option>
+                                                <option value="editorial">Editorial & News Tips</option>
+                                                <option value="advertising">Advertising & Partnerships</option>
+                                                <option value="press">Press & Media Relations</option>
+                                                <option value="technical">Technical Support</option>
+                                                <option value="careers">Careers & Employment</option>
+                                                <option value="feedback">Feedback & Suggestions</option>
+                                            </select>
+                                            <div class="invalid-feedback">Please select a department.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="subject" class="form-label">Subject *</label>
+                                            <input type="text" class="form-control" id="subject" name="subject"
+                                                required>
+                                            <div class="invalid-feedback">Please enter a subject.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="message" class="form-label">Message *</label>
+                                            <textarea class="form-control" id="message" name="message" rows="6"
+                                                required></textarea>
+                                            <div class="invalid-feedback">Please enter your message.</div>
+                                            <div class="form-text">Maximum 2000 characters</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="attachment" class="form-label">Attach Files (Optional)</label>
+                                            <input type="file" class="form-control" id="attachment" name="attachment"
+                                                accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                                            <div class="form-text">Maximum file size: 5MB. Allowed: PDF, DOC, JPG, PNG
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" id="newsletter"
+                                                name="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Subscribe to our newsletter for updates
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" id="terms" name="terms"
+                                                required>
+                                            <label class="form-check-label" for="terms">
+                                                I agree to the <a href="privacy-policy.html" target="_blank">Privacy
+                                                    Policy</a> and <a href="terms-conditions.html" target="_blank">Terms
+                                                    of Service</a> *
+                                            </label>
+                                            <div class="invalid-feedback">You must agree to the terms before submitting.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="form-text">
+                                                Fields marked with * are required
+                                            </div>
+                                            <button type="submit" class="btn btn-primary btn-lg">
+                                                <span class="submit-text">Send Message</span>
+                                                <span class="loading-spinner" style="display: none;">
+                                                    <i class="fas fa-spinner fa-spin me-2"></i>Sending...
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Map Section -->
+                    <div class="map-section mb-5">
+                        <h3 class="mb-4">Our Headquarters</h3>
+                        <div class="map-container">
+                            <div id="mapPlaceholder" class="map-placeholder">
+                                <div class="map-overlay">
+                                    <div class="map-info">
+                                        <h4>Global News Network Headquarters</h4>
+                                        <p>123 News Street, Media City, MC 10101</p>
+                                        <button id="loadMapBtn" class="btn btn-primary">
+                                            <i class="fas fa-map-marked-alt me-2"></i> Load Interactive Map
+                                        </button>
+                                        <p class="small mt-2 text-muted">Click to load Google Maps (requires internet
+                                            connection)</p>
+                                    </div>
+                                </div>
+                                <div class="map-image"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Regional Offices -->
+                    <div class="regional-offices">
+                        <h3 class="mb-4">Regional Offices</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="office-card">
+                                    <h4><i class="fas fa-map-marker-alt text-primary me-2"></i> New York Bureau</h4>
+                                    <p class="mb-2">456 Media Avenue, New York, NY 10001</p>
+                                    <p class="mb-1"><strong>Contact:</strong> +1 (555) 234-5678</p>
+                                    <p class="mb-0"><strong>Email:</strong> ny.bureau@globalnews.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="office-card">
+                                    <h4><i class="fas fa-map-marker-alt text-primary me-2"></i> London Bureau</h4>
+                                    <p class="mb-2">78 Press Street, London, UK SW1A 1AA</p>
+                                    <p class="mb-1"><strong>Contact:</strong> +44 20 7946 0958</p>
+                                    <p class="mb-0"><strong>Email:</strong> london.bureau@globalnews.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="office-card">
+                                    <h4><i class="fas fa-map-marker-alt text-primary me-2"></i> Tokyo Bureau</h4>
+                                    <p class="mb-2">2-11-3 Ginza, Chuo City, Tokyo 104-0061</p>
+                                    <p class="mb-1"><strong>Contact:</strong> +81 3-1234-5678</p>
+                                    <p class="mb-0"><strong>Email:</strong> tokyo.bureau@globalnews.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="office-card">
+                                    <h4><i class="fas fa-map-marker-alt text-primary me-2"></i> Sydney Bureau</h4>
+                                    <p class="mb-2">Level 10, 1 Castlereagh Street, Sydney NSW 2000</p>
+                                    <p class="mb-1"><strong>Contact:</strong> +61 2 9251 1234</p>
+                                    <p class="mb-0"><strong>Email:</strong> sydney.bureau@globalnews.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Quick answers to common questions</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                    How can I submit a news tip?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse1" class="accordion-collapse collapse show"
+                                aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can submit news tips via email to <strong>tips@globalnews.com</strong> or call
+                                    our
+                                    24/7 news desk at <strong>+1 (555) 123-4567</strong>. Please provide as much detail
+                                    as possible and include your contact information if you'd like us to follow up.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                    How do I advertise with Global News Network?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    For advertising inquiries, please email <strong>ads@globalnews.com</strong> or fill
+                                    out
+                                    the contact form selecting "Advertising & Partnerships" as the department. Our
+                                    advertising team will respond with media kits and available opportunities within
+                                    24-48 business hours.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                    How can I report an error or request a correction?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We strive for accuracy in all our reporting. If you believe we've made an error,
+                                    please email <strong>corrections@globalnews.com</strong> with the article URL and
+                                    specific details about the correction needed. Our editorial standards team reviews
+                                    all correction requests promptly.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                    How do I apply for a job or internship?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    All current job openings and internship opportunities are listed on our
+                                    <a href="careers.html">Careers page</a>. Please apply through the online portal.
+                                    For general career inquiries, select "Careers & Employment" in the contact form.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                    How long does it take to receive a response?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We aim to respond to all inquiries within 1-2 business days. Urgent news tips are
+                                    reviewed immediately. During peak periods or breaking news events, response times
+                                    may be slightly longer. You'll receive an automatic confirmation email when your
+                                    message is received.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-3">Stay Connected</h2>
+                    <p class="mb-0">Subscribe to our newsletter for the latest updates, exclusive content, and special
+                        announcements directly from our newsroom.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email address" required>
+                            <button class="btn btn-light" type="submit">
+                                Subscribe <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                        <div class="form-text mt-2">
+                            <small>By subscribing, you agree to our Privacy Policy and consent to receive updates from
+                                our news channel.</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About Column -->
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <a href="index.html" class="d-inline-block mb-3">
+                            <h3 class="logo-text text-white">GNN<span class="logo-dot">.</span></h3>
+                            <span class="logo-subtitle">Global News Network</span>
+                        </a>
+                        <p class="footer-description">
+                            Global News Network is your trusted source for breaking news, in-depth analysis, and
+                            comprehensive coverage of world events. We deliver accurate, timely, and unbiased
+                            journalism.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="category.html?cat=politics">Politics</a></li>
+                        <li><a href="category.html?cat=business">Business</a></li>
+                        <li><a href="category.html?cat=technology">Technology</a></li>
+                        <li><a href="category.html?cat=sports">Sports</a></li>
+                        <li><a href="category.html?cat=entertainment">Entertainment</a></li>
+                        <li><a href="category.html?cat=health">Health</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="advertise.html">Advertise</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-heading">Legal & Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="ethics.html">Code of Ethics</a></li>
+                        <li><a href="corrections.html">Corrections</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-5 pt-4 border-top">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 Global News Network. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Headquarters: 123 News Street, Media City, MC 10101</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search News</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="searchForm" class="mb-4">
+                        <div class="input-group">
+                            <input type="text" id="searchInput" class="form-control form-control-lg"
+                                placeholder="Search for news, topics, or keywords..." autocomplete="off">
+                            <button class="btn btn-primary btn-lg" type="submit">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+                    </form>
+                    <div class="search-results" style="display: none;">
+                        <!-- Search results will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/contact.js"></script>
+</body>
+
+</html>

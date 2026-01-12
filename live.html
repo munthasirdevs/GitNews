@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live TV - Global News Network - Watch Live News Broadcast</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Watch live news coverage from Global News Network. Real-time breaking news, live events coverage, and 24/7 news streaming.">
+    <meta name="keywords" content="live news, live tv, news broadcast, breaking news live, watch news live, 24/7 news">
+    <meta name="author" content="Global News Network">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Live TV - Global News Network">
+    <meta property="og:description" content="Watch live news coverage and breaking news updates 24/7.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://globalnewsnetwork.com/live.html">
+    <meta property="og:image" content="https://globalnewsnetwork.com/assets/images/live-og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/live.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Structured Data for Live Broadcast -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BroadcastEvent",
+        "name": "Global News Network Live Broadcast",
+        "startDate": "2023-01-01T00:00:00Z",
+        "endDate": "2023-12-31T23:59:59Z",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+            "@type": "VirtualLocation",
+            "url": "https://globalnewsnetwork.com/live.html"
+        },
+        "description": "24/7 Live news coverage from Global News Network",
+        "organizer": {
+            "@type": "NewsMediaOrganization",
+            "name": "Global News Network",
+            "url": "https://globalnewsnetwork.com"
+        }
+    }
+    </script>
+</head>
+
+<body class="page-live">
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-ticker">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center py-1">
+                <span class="breaking-badge">LIVE NOW</span>
+                <div class="ticker-content flex-grow-1">
+                    <marquee behavior="scroll" direction="left" scrollamount="3">
+                        <span>• LIVE: Global Climate Summit Coverage •</span>
+                        <span>• LIVE: Market Opening Bell Ceremony •</span>
+                        <span>• LIVE: Press Conference with World Leaders •</span>
+                    </marquee>
+                </div>
+                <div class="live-indicator ms-3">
+                    <span class="pulse-dot"></span>
+                    <span class="live-text">LIVE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <h1 class="logo-text">GNN<span class="logo-dot">.</span></h1>
+                <span class="logo-subtitle">Global News Network</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main Navigation -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
+                            <li><a class="dropdown-item" href="category.html?cat=politics">Politics</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=business">Business</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=technology">Technology</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=sports">Sports</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=entertainment">Entertainment</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=health">Health</a></li>
+                            <li><a class="dropdown-item" href="category.html?cat=science">Science</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="live.html">Live TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="photo-gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side Actions -->
+                <div class="d-flex align-items-center">
+                    <a href="#" class="search-icon me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="live.html" class="btn btn-danger btn-sm">
+                        <i class="fas fa-broadcast-tower me-1"></i> Live Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-container py-3 bg-light">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Live TV</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Live Hero Section -->
+    <section class="live-hero-section py-4">
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <div class="col-lg-8">
+                    <h1 class="live-page-title">Live News Broadcast</h1>
+                    <p class="lead">Watch 24/7 live news coverage from around the world. Breaking news, live events, and
+                        real-time updates.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="live-audience">
+                        <span class="live-audience-count">
+                            <i class="fas fa-users me-2"></i>
+                            <span id="viewerCount">12,458</span> watching now
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Live Stream -->
+            <div class="live-stream-container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="live-player-wrapper">
+                            <div class="live-player-header d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <h2 class="live-stream-title mb-1">GNN Prime Live</h2>
+                                    <div class="live-stream-status">
+                                        <span class="live-badge">LIVE</span>
+                                        <span class="current-program">Current: Global Climate Summit Coverage</span>
+                                    </div>
+                                </div>
+                                <div class="live-quality-selector">
+                                    <div class="dropdown">
+                                        <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button"
+                                            id="qualityDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-cog me-1"></i> Quality: HD
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="qualityDropdown">
+                                            <li><a class="dropdown-item" href="#" data-quality="auto">Auto</a></li>
+                                            <li><a class="dropdown-item" href="#" data-quality="1080">1080p</a></li>
+                                            <li><a class="dropdown-item" href="#" data-quality="720">720p</a></li>
+                                            <li><a class="dropdown-item" href="#" data-quality="480">480p</a></li>
+                                            <li><a class="dropdown-item" href="#" data-quality="360">360p</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video Player -->
+                            <div class="live-video-player">
+                                <div class="video-player-container">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe id="mainLiveStream"
+                                            src="https://www.youtube.com/embed/21X5lGlDOfg?autoplay=1&rel=0&controls=1&modestbranding=1"
+                                            title="GNN Live News Broadcast" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div class="player-overlay">
+                                        <div class="play-pause-btn">
+                                            <i class="fas fa-pause"></i>
+                                        </div>
+                                        <div class="volume-control">
+                                            <i class="fas fa-volume-up"></i>
+                                            <input type="range" class="form-range" min="0" max="100" value="80">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Player Controls -->
+                                <div class="player-controls">
+                                    <div class="controls-left">
+                                        <button class="control-btn" id="playPauseBtn">
+                                            <i class="fas fa-pause"></i>
+                                        </button>
+                                        <button class="control-btn" id="volumeBtn">
+                                            <i class="fas fa-volume-up"></i>
+                                        </button>
+                                        <div class="volume-slider" style="display: none;">
+                                            <input type="range" class="form-range" min="0" max="100" value="80">
+                                        </div>
+                                        <div class="time-display">
+                                            <span class="current-time">00:00</span> /
+                                            <span class="duration">LIVE</span>
+                                        </div>
+                                    </div>
+                                    <div class="controls-right">
+                                        <button class="control-btn" id="fullscreenBtn">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                        <button class="control-btn" id="theaterModeBtn">
+                                            <i class="fas fa-film"></i>
+                                        </button>
+                                        <button class="control-btn" id="shareBtn">
+                                            <i class="fas fa-share"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Live Stream Info -->
+                            <div class="live-stream-info mt-3">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h3>Global Climate Summit Live Coverage</h3>
+                                        <p>Watch live as world leaders gather for the emergency climate summit. Our team
+                                            brings you real-time updates, expert analysis, and exclusive interviews from
+                                            the event.</p>
+                                        <div class="stream-tags">
+                                            <span class="tag">#ClimateChange</span>
+                                            <span class="tag">#GlobalSummit</span>
+                                            <span class="tag">#LiveCoverage</span>
+                                            <span class="tag">#BreakingNews</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="stream-stats">
+                                            <div class="stat-item">
+                                                <i class="fas fa-eye me-2"></i>
+                                                <span>Live Viewers: <strong id="liveViewers">12,458</strong></span>
+                                            </div>
+                                            <div class="stat-item">
+                                                <i class="fas fa-clock me-2"></i>
+                                                <span>Stream Duration: <strong>4:32:15</strong></span>
+                                            </div>
+                                            <div class="stat-item">
+                                                <i class="fas fa-globe me-2"></i>
+                                                <span>Countries: <strong>84</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Channels Sidebar -->
+                    <div class="col-lg-4">
+                        <div class="live-channels-sidebar">
+                            <div class="sidebar-header">
+                                <h3><i class="fas fa-satellite-dish me-2"></i> Live Channels</h3>
+                                <button class="btn btn-sm btn-outline-primary refresh-btn">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                            </div>
+
+                            <div class="channels-list">
+                                <!-- Channel 1 -->
+                                <div class="channel-item active">
+                                    <div class="channel-thumbnail">
+                                        <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                            alt="GNN Prime">
+                                        <div class="live-badge-sm">LIVE</div>
+                                    </div>
+                                    <div class="channel-info">
+                                        <h5>GNN Prime</h5>
+                                        <p class="channel-desc">Global Climate Summit Coverage</p>
+                                        <div class="channel-meta">
+                                            <span><i class="fas fa-users me-1"></i> 12.4K</span>
+                                            <span><i class="fas fa-heart me-1"></i> 2.1K</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Channel 2 -->
+                                <div class="channel-item">
+                                    <div class="channel-thumbnail">
+                                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                            alt="GNN Business">
+                                        <div class="live-badge-sm">LIVE</div>
+                                    </div>
+                                    <div class="channel-info">
+                                        <h5>GNN Business</h5>
+                                        <p class="channel-desc">Market Opening Bell & Analysis</p>
+                                        <div class="channel-meta">
+                                            <span><i class="fas fa-users me-1"></i> 8.7K</span>
+                                            <span><i class="fas fa-heart me-1"></i> 1.5K</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Channel 3 -->
+                                <div class="channel-item">
+                                    <div class="channel-thumbnail">
+                                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                            alt="GNN Sports">
+                                        <div class="live-badge-sm">LIVE</div>
+                                    </div>
+                                    <div class="channel-info">
+                                        <h5>GNN Sports</h5>
+                                        <p class="channel-desc">Championship Finals Live</p>
+                                        <div class="channel-meta">
+                                            <span><i class="fas fa-users me-1"></i> 15.2K</span>
+                                            <span><i class="fas fa-heart me-1"></i> 3.8K</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Channel 4 -->
+                                <div class="channel-item">
+                                    <div class="channel-thumbnail">
+                                        <img src="https://images.unsplash.com/photo-1574269860368-c1b6eab3a71e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                            alt="GNN International">
+                                        <div class="live-badge-sm">LIVE</div>
+                                    </div>
+                                    <div class="channel-info">
+                                        <h5>GNN International</h5>
+                                        <p class="channel-desc">World News Roundup</p>
+                                        <div class="channel-meta">
+                                            <span><i class="fas fa-users me-1"></i> 6.3K</span>
+                                            <span><i class="fas fa-heart me-1"></i> 1.2K</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Channel 5 -->
+                                <div class="channel-item">
+                                    <div class="channel-thumbnail">
+                                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                            alt="GNN Tech">
+                                        <div class="live-badge-sm">LIVE</div>
+                                    </div>
+                                    <div class="channel-info">
+                                        <h5>GNN Tech</h5>
+                                        <p class="channel-desc">Tech Conference Live</p>
+                                        <div class="channel-meta">
+                                            <span><i class="fas fa-users me-1"></i> 9.4K</span>
+                                            <span><i class="fas fa-heart me-1"></i> 2.3K</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Upcoming Streams -->
+                            <div class="upcoming-streams mt-4">
+                                <h4><i class="fas fa-calendar-alt me-2"></i> Upcoming</h4>
+                                <div class="upcoming-item">
+                                    <div class="upcoming-time">14:30</div>
+                                    <div class="upcoming-info">
+                                        <h6>Press Conference: Economic Policy</h6>
+                                        <small>Starts in 45 minutes</small>
+                                    </div>
+                                </div>
+                                <div class="upcoming-item">
+                                    <div class="upcoming-time">16:00</div>
+                                    <div class="upcoming-info">
+                                        <h6>Evening News Bulletin</h6>
+                                        <small>Starts in 2 hours 15 minutes</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Updates Feed -->
+    <section class="live-updates-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="section-title">Live Updates</h2>
+                    <p class="section-subtitle">Real-time news and event updates</p>
+                </div>
+                <div class="live-update-controls">
+                    <button class="btn btn-sm btn-outline-primary me-2" id="pauseUpdates">
+                        <i class="fas fa-pause"></i> Pause
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary" id="refreshUpdates">
+                        <i class="fas fa-sync-alt"></i> Refresh
+                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="live-updates-feed" id="updatesFeed">
+                        <!-- Updates will be dynamically loaded here -->
+                        <div class="update-item">
+                            <div class="update-time">14:45</div>
+                            <div class="update-content">
+                                <h5>Climate Agreement Reached</h5>
+                                <p>World leaders have reached a historic climate agreement with binding targets for
+                                    2030. The deal includes commitments from all major economies.</p>
+                                <div class="update-meta">
+                                    <span><i class="fas fa-user me-1"></i> Sarah Johnson</span>
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> Summit Hall</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="update-item">
+                            <div class="update-time">14:32</div>
+                            <div class="update-content">
+                                <h5>Stock Markets Open Higher</h5>
+                                <p>Global markets opened higher today, with tech stocks leading gains. The S&P 500 is up
+                                    1.2% in early trading.</p>
+                                <div class="update-meta">
+                                    <span><i class="fas fa-user me-1"></i> Michael Chen</span>
+                                    <span><i class="fas fa-chart-line me-1"></i> Business Desk</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="update-item">
+                            <div class="update-time">14:18</div>
+                            <div class="update-content">
+                                <h5>Team Advances to Finals</h5>
+                                <p>National sports team secures championship spot with a stunning 3-2 victory in
+                                    semi-finals. Final match scheduled for Sunday.</p>
+                                <div class="update-meta">
+                                    <span><i class="fas fa-user me-1"></i> David Wilson</span>
+                                    <span><i class="fas fa-futbol me-1"></i> Sports Arena</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="update-item">
+                            <div class="update-time">14:05</div>
+                            <div class="update-content">
+                                <h5>New AI Research Published</h5>
+                                <p>Groundbreaking AI research from leading institute shows 94% accuracy in early disease
+                                    detection. Paper published in Nature.</p>
+                                <div class="update-meta">
+                                    <span><i class="fas fa-user me-1"></i> Dr. Emma Rodriguez</span>
+                                    <span><i class="fas fa-flask me-1"></i> Research Lab</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="update-item">
+                            <div class="update-time">13:52</div>
+                            <div class="update-content">
+                                <h5>Economic Indicators Positive</h5>
+                                <p>Latest economic data shows strong growth in manufacturing and services sectors.
+                                    Unemployment rate drops to 3.8%.</p>
+                                <div class="update-meta">
+                                    <span><i class="fas fa-user me-1"></i> Robert Kim</span>
+                                    <span><i class="fas fa-building me-1"></i> Economic Bureau</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Load More Updates -->
+                    <div class="text-center mt-4">
+                        <button class="btn btn-outline-primary" id="loadMoreUpdates">
+                            <i class="fas fa-plus-circle me-2"></i> Load More Updates
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Live Stats Sidebar -->
+                <div class="col-lg-4">
+                    <div class="live-stats-sidebar">
+                        <div class="stats-widget">
+                            <h3 class="widget-title">Live Stats</h3>
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <h4 id="totalViewers">124,587</h4>
+                                        <p>Total Viewers</p>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <h4 id="countries">84</h4>
+                                        <p>Countries</p>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <h4 id="likes">12,458</h4>
+                                        <p>Likes</p>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <h4 id="comments">3,487</h4>
+                                        <p>Comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trending-topics mt-4">
+                            <h3 class="widget-title">Trending Topics</h3>
+                            <div class="topics-list">
+                                <a href="#" class="topic-item">
+                                    <span class="topic-name">#ClimateSummit2023</span>
+                                    <span class="topic-count">12.4K posts</span>
+                                </a>
+                                <a href="#" class="topic-item">
+                                    <span class="topic-name">#MarketRally</span>
+                                    <span class="topic-count">8.7K posts</span>
+                                </a>
+                                <a href="#" class="topic-item">
+                                    <span class="topic-name">#ChampionshipFinals</span>
+                                    <span class="topic-count">15.2K posts</span>
+                                </a>
+                                <a href="#" class="topic-item">
+                                    <span class="topic-name">#AIResearch</span>
+                                    <span class="topic-count">6.9K posts</span>
+                                </a>
+                                <a href="#" class="topic-item">
+                                    <span class="topic-name">#EconomicGrowth</span>
+                                    <span class="topic-count">5.3K posts</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Live Poll -->
+                        <div class="live-poll mt-4">
+                            <h3 class="widget-title">Live Poll</h3>
+                            <div class="poll-question">
+                                <p>How effective do you think the new climate agreement will be?</p>
+                            </div>
+                            <div class="poll-options">
+                                <div class="poll-option">
+                                    <div class="poll-bar" style="width: 45%"></div>
+                                    <span class="poll-text">Very Effective</span>
+                                    <span class="poll-percentage">45%</span>
+                                </div>
+                                <div class="poll-option">
+                                    <div class="poll-bar" style="width: 32%"></div>
+                                    <span class="poll-text">Somewhat Effective</span>
+                                    <span class="poll-percentage">32%</span>
+                                </div>
+                                <div class="poll-option">
+                                    <div class="poll-bar" style="width: 15%"></div>
+                                    <span class="poll-text">Not Very Effective</span>
+                                    <span class="poll-percentage">15%</span>
+                                </div>
+                                <div class="poll-option">
+                                    <div class="poll-bar" style="width: 8%"></div>
+                                    <span class="poll-text">No Opinion</span>
+                                    <span class="poll-percentage">8%</span>
+                                </div>
+                            </div>
+                            <div class="poll-footer">
+                                <small class="text-muted">Total Votes: 12,458</small>
+                                <button class="btn btn-sm btn-outline-primary">Vote Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Chat Section -->
+    <section class="live-chat-section py-5">
+        <div class="container">
+            <div class="section-header mb-4">
+                <h2 class="section-title">Live Chat</h2>
+                <p class="section-subtitle">Join the conversation with viewers worldwide</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="live-chat-container">
+                        <div class="chat-header d-flex justify-content-between align-items-center">
+                            <div>
+                                <h3>Global Climate Summit Discussion</h3>
+                                <small class="text-muted">Live chat updates every 5 seconds</small>
+                            </div>
+                            <div class="chat-controls">
+                                <button class="btn btn-sm btn-outline-secondary me-2" id="clearChat">
+                                    <i class="fas fa-trash"></i> Clear
+                                </button>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="autoScroll" checked>
+                                    <label class="form-check-label" for="autoScroll">Auto-scroll</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-messages" id="chatMessages">
+                            <!-- Chat messages will be loaded here -->
+                            <div class="message-item">
+                                <div class="message-avatar">
+                                    <img src="https://i.pravatar.cc/40?img=1" alt="User">
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <span class="message-user">SarahJ_Global</span>
+                                        <span class="message-time">14:45</span>
+                                    </div>
+                                    <p class="message-text">Historic moment! This agreement could change everything for
+                                        our planet. 🌍</p>
+                                </div>
+                            </div>
+
+                            <div class="message-item">
+                                <div class="message-avatar">
+                                    <img src="https://i.pravatar.cc/40?img=2" alt="User">
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <span class="message-user">ClimateWarrior</span>
+                                        <span class="message-time">14:46</span>
+                                    </div>
+                                    <p class="message-text">Finally! Some real action instead of just talk. The 2030
+                                        targets are ambitious but necessary.</p>
+                                </div>
+                            </div>
+
+                            <div class="message-item">
+                                <div class="message-avatar">
+                                    <img src="https://i.pravatar.cc/40?img=3" alt="User">
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <span class="message-user">EcoActivist</span>
+                                        <span class="message-time">14:47</span>
+                                    </div>
+                                    <p class="message-text">We need to make sure all countries actually follow through.
+                                        Enforcement is key!</p>
+                                </div>
+                            </div>
+
+                            <div class="message-item">
+                                <div class="message-avatar">
+                                    <img src="https://i.pravatar.cc/40?img=4" alt="User">
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <span class="message-user">FutureThinker</span>
+                                        <span class="message-time">14:48</span>
+                                    </div>
+                                    <p class="message-text">The economic impact of this agreement will be huge.
+                                        Renewable energy investments are going to skyrocket! 📈</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-input">
+                            <form id="chatForm">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Type your message..."
+                                        id="chatInput" required>
+                                    <button class="btn btn-primary" type="submit">
+                                        <i class="fas fa-paper-plane"></i> Send
+                                    </button>
+                                </div>
+                                <div class="chat-input-options mt-2">
+                                    <small class="text-muted me-3">
+                                        <i class="fas fa-info-circle me-1"></i>
+                                        Please keep conversations respectful
+                                    </small>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="anonymousChat">
+                                        <label class="form-check-label" for="anonymousChat">Post anonymously</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Rules & Info -->
+                <div class="col-lg-4">
+                    <div class="chat-info-sidebar">
+                        <div class="chat-rules">
+                            <h4><i class="fas fa-gavel me-2"></i> Chat Rules</h4>
+                            <ul>
+                                <li>Be respectful to other users</li>
+                                <li>No hate speech or harassment</li>
+                                <li>No spam or advertisements</li>
+                                <li>Stay on topic</li>
+                                <li>No sharing of personal information</li>
+                            </ul>
+                        </div>
+
+                        <div class="chat-moderators mt-4">
+                            <h4><i class="fas fa-shield-alt me-2"></i> Active Moderators</h4>
+                            <div class="moderator-list">
+                                <div class="moderator">
+                                    <img src="https://i.pravatar.cc/30?img=11" alt="Moderator">
+                                    <span>Alex_M</span>
+                                </div>
+                                <div class="moderator">
+                                    <img src="https://i.pravatar.cc/30?img=12" alt="Moderator">
+                                    <span>Taylor_C</span>
+                                </div>
+                                <div class="moderator">
+                                    <img src="https://i.pravatar.cc/30?img=13" alt="Moderator">
+                                    <span>Jordan_R</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-stats mt-4">
+                            <h4><i class="fas fa-chart-bar me-2"></i> Chat Stats</h4>
+                            <div class="stats-list">
+                                <div class="stat">
+                                    <span>Messages Today</span>
+                                    <span class="stat-value">2,487</span>
+                                </div>
+                                <div class="stat">
+                                    <span>Active Users</span>
+                                    <span class="stat-value">1,245</span>
+                                </div>
+                                <div class="stat">
+                                    <span>Countries</span>
+                                    <span class="stat-value">62</span>
+                                </div>
+                                <div class="stat">
+                                    <span>Mod Actions</span>
+                                    <span class="stat-value">24</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header mb-4">
+                <h2 class="section-title">Live Schedule</h2>
+                <p class="section-subtitle">Upcoming live broadcasts and events</p>
+            </div>
+
+            <div class="schedule-tabs">
+                <ul class="nav nav-tabs" id="scheduleTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="today-tab" data-bs-toggle="tab" data-bs-target="#today"
+                            type="button" role="tab">Today</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tomorrow-tab" data-bs-toggle="tab" data-bs-target="#tomorrow"
+                            type="button" role="tab">Tomorrow</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="week-tab" data-bs-toggle="tab" data-bs-target="#week" type="button"
+                            role="tab">This Week</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="scheduleTabContent">
+                    <!-- Today's Schedule -->
+                    <div class="tab-pane fade show active" id="today" role="tabpanel">
+                        <div class="schedule-table">
+                            <div class="schedule-item live-now">
+                                <div class="schedule-time">Now - 15:30</div>
+                                <div class="schedule-info">
+                                    <h5>Global Climate Summit Coverage</h5>
+                                    <p>Live from the summit hall with expert analysis</p>
+                                    <span class="badge bg-danger">LIVE NOW</span>
+                                </div>
+                                <div class="schedule-actions">
+                                    <button class="btn btn-sm btn-danger">Watch Live</button>
+                                </div>
+                            </div>
+
+                            <div class="schedule-item upcoming">
+                                <div class="schedule-time">15:30 - 16:30</div>
+                                <div class="schedule-info">
+                                    <h5>Market Analysis & Closing Bell</h5>
+                                    <p>Daily market wrap-up and analysis</p>
+                                    <span class="badge bg-warning">UPCOMING</span>
+                                </div>
+                                <div class="schedule-actions">
+                                    <button class="btn btn-sm btn-outline-primary">Set Reminder</button>
+                                </div>
+                            </div>
+
+                            <div class="schedule-item">
+                                <div class="schedule-time">16:30 - 17:30</div>
+                                <div class="schedule-info">
+                                    <h5>Evening News Bulletin</h5>
+                                    <p>Comprehensive news roundup</p>
+                                </div>
+                                <div class="schedule-actions">
+                                    <button class="btn btn-sm btn-outline-secondary">Add to Calendar</button>
+                                </div>
+                            </div>
+
+                            <div class="schedule-item">
+                                <div class="schedule-time">18:00 - 19:00</div>
+                                <div class="schedule-info">
+                                    <h5>Press Conference: Economic Policy</h5>
+                                    <p>Live coverage of government announcement</p>
+                                </div>
+                                <div class="schedule-actions">
+                                    <button class="btn btn-sm btn-outline-secondary">Add to Calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tomorrow's Schedule -->
+                    <div class="tab-pane fade" id="tomorrow" role="tabpanel">
+                        <div class="schedule-table">
+                            <!-- Tomorrow's schedule items -->
+                        </div>
+                    </div>
+
+                    <!-- Week's Schedule -->
+                    <div class="tab-pane fade" id="week" role="tabpanel">
+                        <div class="schedule-table">
+                            <!-- Week's schedule items -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About Column -->
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <a href="index.html" class="d-inline-block mb-3">
+                            <h3 class="logo-text text-white">GNN<span class="logo-dot">.</span></h3>
+                            <span class="logo-subtitle">Global News Network</span>
+                        </a>
+                        <p class="footer-description">
+                            Global News Network is your trusted source for breaking news, in-depth analysis, and
+                            comprehensive coverage of world events. We deliver accurate, timely, and unbiased
+                            journalism.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="category.html?cat=politics">Politics</a></li>
+                        <li><a href="category.html?cat=business">Business</a></li>
+                        <li><a href="category.html?cat=technology">Technology</a></li>
+                        <li><a href="category.html?cat=sports">Sports</a></li>
+                        <li><a href="category.html?cat=entertainment">Entertainment</a></li>
+                        <li><a href="category.html?cat=health">Health</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="advertise.html">Advertise</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-heading">Legal & Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="ethics.html">Code of Ethics</a></li>
+                        <li><a href="corrections.html">Corrections</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-5 pt-4 border-top">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 Global News Network. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Headquarters: 123 News Street, Media City, MC 10101</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quality Selection Modal -->
+    <div class="modal fade" id="qualityModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Select Video Quality</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action" data-quality="auto">
+                            <i class="fas fa-bolt me-2"></i> Auto
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" data-quality="1080">
+                            <i class="fas fa-hd me-2"></i> 1080p (HD)
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" data-quality="720">
+                            <i class="fas fa-video me-2"></i> 720p
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" data-quality="480">
+                            <i class="fas fa-mobile-alt me-2"></i> 480p
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" data-quality="360">
+                            <i class="fas fa-wifi me-2"></i> 360p (Low)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal -->
+    <div class="modal fade" id="shareModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Share Live Stream</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="share-options">
+                        <button class="share-option btn btn-outline-primary mb-2">
+                            <i class="fab fa-facebook me-2"></i> Share on Facebook
+                        </button>
+                        <button class="share-option btn btn-outline-info mb-2">
+                            <i class="fab fa-twitter me-2"></i> Share on Twitter
+                        </button>
+                        <button class="share-option btn btn-outline-danger mb-2">
+                            <i class="fab fa-whatsapp me-2"></i> Share on WhatsApp
+                        </button>
+                        <button class="share-option btn btn-outline-secondary mb-2">
+                            <i class="fas fa-link me-2"></i> Copy Link
+                        </button>
+                        <button class="share-option btn btn-outline-dark mb-2">
+                            <i class="fas fa-embed me-2"></i> Embed Code
+                        </button>
+                    </div>
+                    <div class="input-group mt-3">
+                        <input type="text" class="form-control" value="https://globalnewsnetwork.com/live.html"
+                            id="shareUrl" readonly>
+                        <button class="btn btn-primary" onclick="copyShareUrl()">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/live.js"></script>
+</body>
+
+</html>
